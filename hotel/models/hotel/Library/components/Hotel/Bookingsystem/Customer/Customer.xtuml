@@ -1,0 +1,175 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'Customer',
+	2,
+	'CUSTOMER',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("04486703-d09c-468e-a32f-c8ced96936eb",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'setCreditCard',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TPARM
+	VALUES ("3b2fa479-17dd-4d32-86f5-631bfed5dd45",
+	"04486703-d09c-468e-a32f-c8ced96936eb",
+	'CardNr',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("31cc15fa-bc7f-4fda-b1c3-29d21fab2bc4",
+	"04486703-d09c-468e-a32f-c8ced96936eb",
+	'cvc',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"3b2fa479-17dd-4d32-86f5-631bfed5dd45",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("ae850039-fce6-46e5-ba0d-35e712c3f967",
+	"04486703-d09c-468e-a32f-c8ced96936eb",
+	'expirationDate',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"31cc15fa-bc7f-4fda-b1c3-29d21fab2bc4",
+	'');
+INSERT INTO O_TFR
+	VALUES ("58f4910b-7e36-42af-a369-26e7e6fe7a19",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'getCreditCard',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"04486703-d09c-468e-a32f-c8ced96936eb");
+INSERT INTO O_TFR
+	VALUES ("baf7bc3f-1830-489c-a6c2-0148350e050f",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'addPoints',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"58f4910b-7e36-42af-a369-26e7e6fe7a19");
+INSERT INTO O_TPARM
+	VALUES ("65dde8fe-b1fe-4bb6-acff-ebf79fdd622a",
+	"baf7bc3f-1830-489c-a6c2-0148350e050f",
+	'amount',
+	"ba5eda7a-def5-0000-0000-000000000003",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("3e9ba92c-dd53-4bd4-962f-0f94036d5e76",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'removePoints',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"baf7bc3f-1830-489c-a6c2-0148350e050f");
+INSERT INTO O_TPARM
+	VALUES ("25c142ac-3123-4cd2-b2e2-b88ef023feed",
+	"3e9ba92c-dd53-4bd4-962f-0f94036d5e76",
+	'amount',
+	"ba5eda7a-def5-0000-0000-000000000003",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("00c8b8e5-5f17-40e5-9111-73a9f410658a",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_BATTR
+	VALUES ("00c8b8e5-5f17-40e5-9111-73a9f410658a",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_ATTR
+	VALUES ("00c8b8e5-5f17-40e5-9111-73a9f410658a",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	"00000000-0000-0000-0000-000000000000",
+	'name',
+	'',
+	'',
+	'name',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("2a94a2ed-204c-4c7e-90ee-32f5cbfad5c7",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_BATTR
+	VALUES ("2a94a2ed-204c-4c7e-90ee-32f5cbfad5c7",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_ATTR
+	VALUES ("2a94a2ed-204c-4c7e-90ee-32f5cbfad5c7",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	"00c8b8e5-5f17-40e5-9111-73a9f410658a",
+	'pid',
+	'',
+	'',
+	'pid',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("4998460a-4029-42df-9835-c527ec4133e3",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_BATTR
+	VALUES ("4998460a-4029-42df-9835-c527ec4133e3",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_ATTR
+	VALUES ("4998460a-4029-42df-9835-c527ec4133e3",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	"2a94a2ed-204c-4c7e-90ee-32f5cbfad5c7",
+	'points',
+	'',
+	'',
+	'points',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_ID
+	VALUES (1,
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_ID
+	VALUES (2,
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO PE_PE
+	VALUES ("30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	1,
+	"ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	"79cb7e37-5163-4fed-a224-f45d99a1a380",
+	'Bookingsystem',
+	'',
+	0,
+	'../Bookingsystem.xtuml');

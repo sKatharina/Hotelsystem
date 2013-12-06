@@ -1,0 +1,139 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("dbb442a5-b1dd-46d1-af0d-6302b347ab45",
+	'CustomerController',
+	8,
+	'CUSTOMERCONTROLLER',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("f2d1feb0-f156-4399-afc1-01b90658f9c3",
+	"dbb442a5-b1dd-46d1-af0d-6302b347ab45",
+	'createCustomer',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TPARM
+	VALUES ("2d8d17d1-bebc-43db-a4b4-0d87d12c6120",
+	"f2d1feb0-f156-4399-afc1-01b90658f9c3",
+	'name',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("6edff7b2-609e-4bb9-a2ff-438afd8c28a2",
+	"f2d1feb0-f156-4399-afc1-01b90658f9c3",
+	'pid',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"2d8d17d1-bebc-43db-a4b4-0d87d12c6120",
+	'');
+INSERT INTO O_TFR
+	VALUES ("62f46f01-ec93-4a14-b198-90650ecb1ef6",
+	"dbb442a5-b1dd-46d1-af0d-6302b347ab45",
+	'setCreditCard',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"f2d1feb0-f156-4399-afc1-01b90658f9c3");
+INSERT INTO O_TPARM
+	VALUES ("8db77800-2961-42a8-8081-9120c2af9900",
+	"62f46f01-ec93-4a14-b198-90650ecb1ef6",
+	'customer',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("09cd28b1-da08-45a0-a86a-7ab61572c660",
+	"62f46f01-ec93-4a14-b198-90650ecb1ef6",
+	'cardNumber',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"8db77800-2961-42a8-8081-9120c2af9900",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("d61146d4-1fbb-4c6d-8aaf-f55bf2698e0d",
+	"62f46f01-ec93-4a14-b198-90650ecb1ef6",
+	'cvc',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"09cd28b1-da08-45a0-a86a-7ab61572c660",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("5ec403f0-9a73-44a9-a808-027a8cb32f3e",
+	"62f46f01-ec93-4a14-b198-90650ecb1ef6",
+	'expirationDate',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"d61146d4-1fbb-4c6d-8aaf-f55bf2698e0d",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("3b3c4064-b499-4a7d-b992-76f875660e10",
+	"62f46f01-ec93-4a14-b198-90650ecb1ef6",
+	'cardType',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"5ec403f0-9a73-44a9-a808-027a8cb32f3e",
+	'');
+INSERT INTO O_TFR
+	VALUES ("d660106b-92d6-4522-824e-ae014f5d0514",
+	"dbb442a5-b1dd-46d1-af0d-6302b347ab45",
+	'addPoints',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'LOG::LogInfo(message:"test");',
+	1,
+	'',
+	"62f46f01-ec93-4a14-b198-90650ecb1ef6");
+INSERT INTO O_TFR
+	VALUES ("faad31c7-ab47-489b-98ea-ea0dcde6ab41",
+	"dbb442a5-b1dd-46d1-af0d-6302b347ab45",
+	'findBookings',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"d660106b-92d6-4522-824e-ae014f5d0514");
+INSERT INTO O_ID
+	VALUES (0,
+	"dbb442a5-b1dd-46d1-af0d-6302b347ab45");
+INSERT INTO O_ID
+	VALUES (1,
+	"dbb442a5-b1dd-46d1-af0d-6302b347ab45");
+INSERT INTO O_ID
+	VALUES (2,
+	"dbb442a5-b1dd-46d1-af0d-6302b347ab45");
+INSERT INTO PE_PE
+	VALUES ("dbb442a5-b1dd-46d1-af0d-6302b347ab45",
+	1,
+	"ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	"79cb7e37-5163-4fed-a224-f45d99a1a380",
+	'Bookingsystem',
+	'',
+	0,
+	'../Bookingsystem.xtuml');

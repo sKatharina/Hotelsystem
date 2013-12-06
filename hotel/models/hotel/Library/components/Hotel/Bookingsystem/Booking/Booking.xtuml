@@ -1,0 +1,155 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'Booking',
+	3,
+	'BOOKING',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("becac97f-fa70-4005-8ec0-c69cfbe980c4",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'isPaid',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("2ff439c6-fa8f-45be-a861-7928ba0cb2f7",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'hasCheckedOut',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'',
+	1,
+	'',
+	"becac97f-fa70-4005-8ec0-c69cfbe980c4");
+INSERT INTO O_TFR
+	VALUES ("e5e2e151-6d2f-4b8f-9c3f-5cab5c4462d4",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'hasCheckedIn',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'',
+	1,
+	'',
+	"2ff439c6-fa8f-45be-a861-7928ba0cb2f7");
+INSERT INTO O_NBATTR
+	VALUES ("79f54674-ac99-400b-9abd-545972256c77",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_BATTR
+	VALUES ("79f54674-ac99-400b-9abd-545972256c77",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ATTR
+	VALUES ("79f54674-ac99-400b-9abd-545972256c77",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	"00000000-0000-0000-0000-000000000000",
+	'price',
+	'',
+	'',
+	'price',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("9f078272-a820-466f-ba59-490c3f471137",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_BATTR
+	VALUES ("9f078272-a820-466f-ba59-490c3f471137",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ATTR
+	VALUES ("9f078272-a820-466f-ba59-490c3f471137",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	"79f54674-ac99-400b-9abd-545972256c77",
+	'paidAmount',
+	'',
+	'',
+	'paidAmount',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("487c006b-fc63-4d6c-8f7d-592d201e9977",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_BATTR
+	VALUES ("487c006b-fc63-4d6c-8f7d-592d201e9977",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ATTR
+	VALUES ("487c006b-fc63-4d6c-8f7d-592d201e9977",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	"9f078272-a820-466f-ba59-490c3f471137",
+	'isCanceled',
+	'',
+	'',
+	'isCanceled',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("3e0299d1-4ded-44e3-82b1-ebfc70840293",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_BATTR
+	VALUES ("3e0299d1-4ded-44e3-82b1-ebfc70840293",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ATTR
+	VALUES ("3e0299d1-4ded-44e3-82b1-ebfc70840293",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	"487c006b-fc63-4d6c-8f7d-592d201e9977",
+	'checkInDate',
+	'',
+	'',
+	'checkInDate',
+	0,
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("6ff1bf49-f705-4e52-929b-ee0822762ee0",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_BATTR
+	VALUES ("6ff1bf49-f705-4e52-929b-ee0822762ee0",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ATTR
+	VALUES ("6ff1bf49-f705-4e52-929b-ee0822762ee0",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	"3e0299d1-4ded-44e3-82b1-ebfc70840293",
+	'checkOutDate',
+	'',
+	'',
+	'checkOutDate',
+	0,
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ID
+	VALUES (1,
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ID
+	VALUES (2,
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO PE_PE
+	VALUES ("174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	1,
+	"ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	"79cb7e37-5163-4fed-a224-f45d99a1a380",
+	'Bookingsystem',
+	'',
+	0,
+	'../Bookingsystem.xtuml');

@@ -1,0 +1,68 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("75071b7a-c645-4198-8e7b-419c13fe59bc",
+	'Guest',
+	4,
+	'GUEST',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("4ccd44da-0651-4815-9b5a-a84843ae1fa2",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc");
+INSERT INTO O_BATTR
+	VALUES ("4ccd44da-0651-4815-9b5a-a84843ae1fa2",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc");
+INSERT INTO O_ATTR
+	VALUES ("4ccd44da-0651-4815-9b5a-a84843ae1fa2",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc",
+	"00000000-0000-0000-0000-000000000000",
+	'name',
+	'',
+	'',
+	'name',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("0fe29f90-cd3b-4bec-974e-b5fbadc943f4",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc");
+INSERT INTO O_BATTR
+	VALUES ("0fe29f90-cd3b-4bec-974e-b5fbadc943f4",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc");
+INSERT INTO O_ATTR
+	VALUES ("0fe29f90-cd3b-4bec-974e-b5fbadc943f4",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc",
+	"4ccd44da-0651-4815-9b5a-a84843ae1fa2",
+	'pid',
+	'',
+	'',
+	'pid',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"75071b7a-c645-4198-8e7b-419c13fe59bc");
+INSERT INTO O_ID
+	VALUES (1,
+	"75071b7a-c645-4198-8e7b-419c13fe59bc");
+INSERT INTO O_ID
+	VALUES (2,
+	"75071b7a-c645-4198-8e7b-419c13fe59bc");
+INSERT INTO PE_PE
+	VALUES ("75071b7a-c645-4198-8e7b-419c13fe59bc",
+	1,
+	"ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	"79cb7e37-5163-4fed-a224-f45d99a1a380",
+	'Bookingsystem',
+	'',
+	0,
+	'../Bookingsystem.xtuml');

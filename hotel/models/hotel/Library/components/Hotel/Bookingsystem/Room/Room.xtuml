@@ -1,0 +1,151 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("8d6a3651-3498-4c06-a7e6-56b68d3ad7e4",
+	'Room',
+	6,
+	'ROOM',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("e8a28f2b-82f5-477e-9c28-08c900d7128f",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4",
+	'matchFeatures',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("ecab17fb-a04f-483d-93fc-eb351cde5da3",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_BATTR
+	VALUES ("ecab17fb-a04f-483d-93fc-eb351cde5da3",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_ATTR
+	VALUES ("ecab17fb-a04f-483d-93fc-eb351cde5da3",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4",
+	"00000000-0000-0000-0000-000000000000",
+	'roomNumber',
+	'',
+	'',
+	'roomNumber',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("db217e85-0df0-4bc8-adfa-fccd7b844366",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_BATTR
+	VALUES ("db217e85-0df0-4bc8-adfa-fccd7b844366",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_ATTR
+	VALUES ("db217e85-0df0-4bc8-adfa-fccd7b844366",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4",
+	"ecab17fb-a04f-483d-93fc-eb351cde5da3",
+	'describtion',
+	'',
+	'',
+	'describtion',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("5d52bd26-1df4-450f-be90-9230aa01aa5a",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_BATTR
+	VALUES ("5d52bd26-1df4-450f-be90-9230aa01aa5a",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_ATTR
+	VALUES ("5d52bd26-1df4-450f-be90-9230aa01aa5a",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4",
+	"db217e85-0df0-4bc8-adfa-fccd7b844366",
+	'price',
+	'',
+	'',
+	'price',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("8648bc50-d468-4276-984c-f15af0fbdf1f",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_BATTR
+	VALUES ("8648bc50-d468-4276-984c-f15af0fbdf1f",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_ATTR
+	VALUES ("8648bc50-d468-4276-984c-f15af0fbdf1f",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4",
+	"5d52bd26-1df4-450f-be90-9230aa01aa5a",
+	'maxPeopleCapacity',
+	'',
+	'',
+	'maxPeopleCapacity',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("5c3f26bd-790f-4ffb-8a89-d98aea6cb5f3",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_BATTR
+	VALUES ("5c3f26bd-790f-4ffb-8a89-d98aea6cb5f3",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_ATTR
+	VALUES ("5c3f26bd-790f-4ffb-8a89-d98aea6cb5f3",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4",
+	"8648bc50-d468-4276-984c-f15af0fbdf1f",
+	'sleepable',
+	'',
+	'',
+	'sleepable',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("332a4c6e-30bd-49f0-93f3-46f7f30118aa",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_BATTR
+	VALUES ("332a4c6e-30bd-49f0-93f3-46f7f30118aa",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_ATTR
+	VALUES ("332a4c6e-30bd-49f0-93f3-46f7f30118aa",
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4",
+	"5c3f26bd-790f-4ffb-8a89-d98aea6cb5f3",
+	'enabled',
+	'',
+	'',
+	'enabled',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_ID
+	VALUES (1,
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO O_ID
+	VALUES (2,
+	"8d6a3651-3498-4c06-a7e6-56b68d3ad7e4");
+INSERT INTO PE_PE
+	VALUES ("8d6a3651-3498-4c06-a7e6-56b68d3ad7e4",
+	1,
+	"ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("ecfe8c22-480f-4044-b721-e56ab5533a75",
+	"00000000-0000-0000-0000-000000000000",
+	"79cb7e37-5163-4fed-a224-f45d99a1a380",
+	'Bookingsystem',
+	'',
+	0,
+	'../Bookingsystem.xtuml');

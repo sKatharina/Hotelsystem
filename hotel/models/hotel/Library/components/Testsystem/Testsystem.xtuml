@@ -1,0 +1,411 @@
+-- BP 7.1.6 content: Component syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_C
+	VALUES ("4f3ae9b9-c535-4a9b-9176-48943fd4e09f",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'Testsystem',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'');
+INSERT INTO GD_MD
+	VALUES ("e550d9f1-06df-4be9-b92c-276f4c1e6f62",
+	111,
+	"4f3ae9b9-c535-4a9b-9176-48943fd4e09f",
+	98,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	200,
+	150,
+	0,
+	'4.1.0',
+	'hotel::Library::components::Testsystem');
+INSERT INTO GD_GE
+	VALUES ("2476f8aa-ea61-4d53-a89f-5edf71faeb9f",
+	"e550d9f1-06df-4be9-b92c-276f4c1e6f62",
+	"4f3ae9b9-c535-4a9b-9176-48943fd4e09f",
+	103,
+	0,
+	'hotel::Library::components::Testsystem');
+INSERT INTO GD_SHP
+	VALUES ("2476f8aa-ea61-4d53-a89f-5edf71faeb9f");
+INSERT INTO GD_CTR
+	VALUES ("2476f8aa-ea61-4d53-a89f-5edf71faeb9f");
+INSERT INTO DIM_ND
+	VALUES (851.000000,
+	183.000000,
+	"2476f8aa-ea61-4d53-a89f-5edf71faeb9f");
+INSERT INTO DIM_GE
+	VALUES (4100.000000,
+	3100.000000,
+	"2476f8aa-ea61-4d53-a89f-5edf71faeb9f",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("2476f8aa-ea61-4d53-a89f-5edf71faeb9f",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_CON
+	VALUES ("35ad10b7-8c62-486f-9deb-0fdd5fc84c16",
+	4100.000000,
+	3174.000000,
+	"2476f8aa-ea61-4d53-a89f-5edf71faeb9f");
+INSERT INTO DIM_CON
+	VALUES ("3177cb03-8403-4ddb-9698-773c7a563961",
+	4100.000000,
+	3186.000000,
+	"2476f8aa-ea61-4d53-a89f-5edf71faeb9f");
+INSERT INTO DIM_CON
+	VALUES ("971034a6-f77b-45da-b90c-d889b10a0607",
+	4100.000000,
+	3246.000000,
+	"2476f8aa-ea61-4d53-a89f-5edf71faeb9f");
+INSERT INTO GD_GE
+	VALUES ("d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	"e550d9f1-06df-4be9-b92c-276f4c1e6f62",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403",
+	94,
+	0,
+	'hotel::Library::components::Testsystem::Port1::TestHotelInterface');
+INSERT INTO GD_CON
+	VALUES ("d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("cefaac30-c67f-4c96-a51a-1902d3a82bc2",
+	"d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"cefaac30-c67f-4c96-a51a-1902d3a82bc2");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"cefaac30-c67f-4c96-a51a-1902d3a82bc2",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("cefaac30-c67f-4c96-a51a-1902d3a82bc2",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("0fb8a143-0afd-4ac4-b62f-b8776ff9fd03",
+	"d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	3,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"0fb8a143-0afd-4ac4-b62f-b8776ff9fd03");
+INSERT INTO DIM_GE
+	VALUES (4015.000000,
+	3206.000000,
+	"0fb8a143-0afd-4ac4-b62f-b8776ff9fd03",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("0fb8a143-0afd-4ac4-b62f-b8776ff9fd03",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("9a3696ea-2ece-414f-8351-34f22fe70ccf",
+	"d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"9a3696ea-2ece-414f-8351-34f22fe70ccf");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"9a3696ea-2ece-414f-8351-34f22fe70ccf",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("9a3696ea-2ece-414f-8351-34f22fe70ccf",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("62395621-7c5e-4e0a-89d6-1c44d01e80b6",
+	"d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	"00000000-0000-0000-0000-000000000000",
+	"f543608d-53a7-45a1-bfb1-94e29b3f73b9",
+	"71c55b2d-f477-43c3-ae42-0e4ae1ce3bee");
+INSERT INTO DIM_WAY
+	VALUES ("f543608d-53a7-45a1-bfb1-94e29b3f73b9",
+	4100.000000,
+	3246.000000,
+	"d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("71c55b2d-f477-43c3-ae42-0e4ae1ce3bee",
+	4025.000000,
+	3246.000000,
+	"d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	"00000000-0000-0000-0000-000000000000",
+	"f543608d-53a7-45a1-bfb1-94e29b3f73b9");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("d4827a51-cec1-4ea5-b53a-ce657a4ce5de",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("971034a6-f77b-45da-b90c-d889b10a0607",
+	"00000000-0000-0000-0000-000000000000",
+	"d4827a51-cec1-4ea5-b53a-ce657a4ce5de");
+INSERT INTO GD_GE
+	VALUES ("4e9011eb-5831-4eea-873d-674b1c95bb83",
+	"e550d9f1-06df-4be9-b92c-276f4c1e6f62",
+	"2e607b61-98cf-4ab1-9fbe-0cdf365692c1",
+	108,
+	0,
+	'hotel::Library::components::Testsystem::Testcases');
+INSERT INTO GD_SHP
+	VALUES ("4e9011eb-5831-4eea-873d-674b1c95bb83");
+INSERT INTO GD_NCS
+	VALUES ("4e9011eb-5831-4eea-873d-674b1c95bb83");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"4e9011eb-5831-4eea-873d-674b1c95bb83");
+INSERT INTO DIM_GE
+	VALUES (4739.000000,
+	3100.000000,
+	"4e9011eb-5831-4eea-873d-674b1c95bb83",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("4e9011eb-5831-4eea-873d-674b1c95bb83",
+	0,
+	"2476f8aa-ea61-4d53-a89f-5edf71faeb9f");
+INSERT INTO DIM_DIA
+	VALUES ("e550d9f1-06df-4be9-b92c-276f4c1e6f62",
+	'',
+	1.000000,
+	4000.000000,
+	3000.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PO
+	VALUES ("f9b73906-dc89-43d4-bb4f-4af82b004f2e",
+	"4f3ae9b9-c535-4a9b-9176-48943fd4e09f",
+	'Port1',
+	0,
+	0);
+INSERT INTO C_IR
+	VALUES ("4d7781ec-bbd3-41be-9b5d-8563df2e6403",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	"00000000-0000-0000-0000-000000000000",
+	"f9b73906-dc89-43d4-bb4f-4af82b004f2e");
+INSERT INTO C_P
+	VALUES ("4d7781ec-bbd3-41be-9b5d-8563df2e6403",
+	'TestHotelInterface',
+	'Unnamed Interface',
+	'',
+	'Testsystem::Port1::TestHotelInterface');
+INSERT INTO SPR_PEP
+	VALUES ("de6baab9-c95e-4953-92a6-3c5b180dc69f",
+	"1f7286cf-9016-4ab3-a0df-b155f7da916c",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PS
+	VALUES ("de6baab9-c95e-4953-92a6-3c5b180dc69f",
+	'createCustomer',
+	'',
+	'',
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("1f7286cf-9016-4ab3-a0df-b155f7da916c",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'createCustomer',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("7f0974bf-6399-4749-aea3-9b89c31ad08e",
+	"225b3187-bf93-42ac-992d-63e10327c817",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PS
+	VALUES ("7f0974bf-6399-4749-aea3-9b89c31ad08e",
+	'customerCreated',
+	'',
+	'',
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("225b3187-bf93-42ac-992d-63e10327c817",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'customerCreated',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("48b2ac57-d719-45c8-b4ec-1bdc0037f979",
+	"31569f0a-f989-4e34-831b-5cb7f4385a36",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PS
+	VALUES ("48b2ac57-d719-45c8-b4ec-1bdc0037f979",
+	'init',
+	'LOG:LogInfo(message:"test");',
+	'//send Port1::createCustomer(name:"Customer1", pid:1234);',
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("31569f0a-f989-4e34-831b-5cb7f4385a36",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'init',
+	'LOG:LogInfo(message:"test");',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("ca46c81d-db9e-494f-8267-27f74b34f91d",
+	"e37be7a9-0ab4-46a0-afeb-2f948f1466ad",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PS
+	VALUES ("ca46c81d-db9e-494f-8267-27f74b34f91d",
+	'testsignal',
+	'',
+	'',
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("e37be7a9-0ab4-46a0-afeb-2f948f1466ad",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'testsignal',
+	'LOG::LogInfo(message:"test");',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("71382069-3f1a-491e-bb4e-27f3f0531e1d",
+	"737094e6-8cf0-4f30-9802-60222d6581e5",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PO
+	VALUES ("71382069-3f1a-491e-bb4e-27f3f0531e1d",
+	'testoperation',
+	'',
+	'',
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("737094e6-8cf0-4f30-9802-60222d6581e5",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'testoperation',
+	'LOG::LogInfo(message:"test1");
+x=2;
+y=3;
+z=x+y;',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("98e017b5-2083-46b5-8c37-7e704d944022",
+	"03053bde-84ed-426e-be32-0ac7d6443ec0",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PO
+	VALUES ("98e017b5-2083-46b5-8c37-7e704d944022",
+	'testOperation',
+	'',
+	'send Port1::createCustomer(name:"customer1", pid:123);',
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("03053bde-84ed-426e-be32-0ac7d6443ec0",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'testOperation',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("7b0baf54-c688-4e6f-a64c-3015ca9cfe85",
+	"8d3d653c-2666-43d0-bd32-8afada29ec1f",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PS
+	VALUES ("7b0baf54-c688-4e6f-a64c-3015ca9cfe85",
+	'initTestdata',
+	'',
+	'',
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("8d3d653c-2666-43d0-bd32-8afada29ec1f",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'initTestdata',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("74f98560-8dbe-4f78-9878-2408f565ae14",
+	"29c7b2c4-03f4-42f4-8bd6-17be4c7bbdfc",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PS
+	VALUES ("74f98560-8dbe-4f78-9878-2408f565ae14",
+	'createRoom',
+	'',
+	'',
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("29c7b2c4-03f4-42f4-8bd6-17be4c7bbdfc",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'createRoom',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("69ccbf96-07e8-4966-b1bb-88888562bf84",
+	"d6038333-9b51-460c-b627-eb52239212f5",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PS
+	VALUES ("69ccbf96-07e8-4966-b1bb-88888562bf84",
+	'listAvailableRooms',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("d6038333-9b51-460c-b627-eb52239212f5",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'listAvailableRooms',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("b56ea5a2-5f15-47b2-9625-cb5938b6bd43",
+	"3e5b1dde-7947-4c2e-aec9-c7be38df007d",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
+INSERT INTO SPR_PS
+	VALUES ("b56ea5a2-5f15-47b2-9625-cb5938b6bd43",
+	'availableRooms',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("3e5b1dde-7947-4c2e-aec9-c7be38df007d",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'availableRooms',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	"00000000-0000-0000-0000-000000000000",
+	'TestHotelInterface',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO PE_PE
+	VALUES ("4f3ae9b9-c535-4a9b-9176-48943fd4e09f",
+	1,
+	"6c7e3efc-99f6-4e25-b853-8fa80326ce44",
+	"00000000-0000-0000-0000-000000000000",
+	2);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("6c7e3efc-99f6-4e25-b853-8fa80326ce44",
+	"00000000-0000-0000-0000-000000000000",
+	"79cb7e37-5163-4fed-a224-f45d99a1a380",
+	'components',
+	'',
+	0,
+	'../components.xtuml');
