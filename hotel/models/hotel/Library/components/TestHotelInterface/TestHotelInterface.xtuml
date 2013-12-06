@@ -69,11 +69,11 @@ INSERT INTO C_EP
 	VALUES ("31569f0a-f989-4e34-831b-5cb7f4385a36",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
 	-1,
-	'init',
+	'initMakeBooking',
 	'LOG:LogInfo(message:"test");');
 INSERT INTO C_AS
 	VALUES ("31569f0a-f989-4e34-831b-5cb7f4385a36",
-	'init',
+	'initMakeBooking',
 	'LOG:LogInfo(message:"test");',
 	0,
 	"225b3187-bf93-42ac-992d-63e10327c817");
