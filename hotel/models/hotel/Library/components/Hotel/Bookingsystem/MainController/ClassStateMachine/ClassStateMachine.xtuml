@@ -9,6 +9,34 @@ INSERT INTO SM_SM
 	0);
 INSERT INTO SM_MOORE
 	VALUES ("7284ec50-ca8d-4bd8-adf1-78b96257d9aa");
+INSERT INTO SM_SGEVT
+	VALUES ("8f53552e-c4e9-407a-8134-995a8ef248fe",
+	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	"c80b1d91-6ddd-4e29-a6c7-7dcefdbedf0f",
+	'Port1::listAvailableRooms');
+INSERT INTO SPR_RS_PROXY
+	VALUES ("c80b1d91-6ddd-4e29-a6c7-7dcefdbedf0f",
+	'listAvailableRooms',
+	'',
+	'',
+	1,
+	'../../../Hotel.xtuml');
+INSERT INTO SM_SEVT
+	VALUES ("8f53552e-c4e9-407a-8134-995a8ef248fe",
+	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_EVT
+	VALUES ("8f53552e-c4e9-407a-8134-995a8ef248fe",
+	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
+	"00000000-0000-0000-0000-000000000000",
+	1,
+	'listAvailableRooms',
+	0,
+	'',
+	'Port1::listAvailableRooms',
+	'');
 INSERT INTO SM_STATE
 	VALUES ("e27988aa-89dc-477e-811c-53889d241d4c",
 	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
@@ -16,6 +44,11 @@ INSERT INTO SM_STATE
 	'init',
 	1,
 	0);
+INSERT INTO SM_SEME
+	VALUES ("e27988aa-89dc-477e-811c-53889d241d4c",
+	"8f53552e-c4e9-407a-8134-995a8ef248fe",
+	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_STATE
 	VALUES ("0b9f6e1e-4ea2-4a81-8f71-efdffc431a6a",
 	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
@@ -23,10 +56,22 @@ INSERT INTO SM_STATE
 	'sendingAvailableRooms',
 	2,
 	0);
-INSERT INTO SM_NETXN
+INSERT INTO SM_CH
+	VALUES ("0b9f6e1e-4ea2-4a81-8f71-efdffc431a6a",
+	"8f53552e-c4e9-407a-8134-995a8ef248fe",
+	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO SM_SEME
+	VALUES ("0b9f6e1e-4ea2-4a81-8f71-efdffc431a6a",
+	"8f53552e-c4e9-407a-8134-995a8ef248fe",
+	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO SM_NSTXN
 	VALUES ("f62d7201-46ae-42e9-be9d-6735accbe371",
 	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
 	"e27988aa-89dc-477e-811c-53889d241d4c",
+	"8f53552e-c4e9-407a-8134-995a8ef248fe",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_TXN
 	VALUES ("f62d7201-46ae-42e9-be9d-6735accbe371",
@@ -155,7 +200,7 @@ INSERT INTO GD_GE
 	"f62d7201-46ae-42e9-be9d-6735accbe371",
 	42,
 	0,
-	'hotel::Library::components::Hotel::Bookingsystem::MainController::Class State Machine::init::No Event Assigned');
+	'hotel::Library::components::Hotel::Bookingsystem::MainController::Class State Machine::init::Port1::listAvailableRooms');
 INSERT INTO GD_CON
 	VALUES ("ad67aa11-f116-4278-9f4f-17fe00da3d01",
 	"00000000-0000-0000-0000-000000000000");
