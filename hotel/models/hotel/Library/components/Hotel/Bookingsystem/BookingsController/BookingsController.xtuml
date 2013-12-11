@@ -4,7 +4,7 @@ INSERT INTO O_OBJ
 	VALUES ("735b777d-07af-4439-a8dd-5aa7ead26c8d",
 	'BookingsController',
 	9,
-	'KEY',
+	'BOOKINGSCONTROLLER',
 	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
@@ -160,6 +160,46 @@ INSERT INTO O_TPARM
 	VALUES ("dda449b7-15fb-4120-92cf-af3732a03784",
 	"a255e61e-f79c-40d3-827c-5cb0a8f2a06a",
 	'booking',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("9ed10e4d-6e93-42d9-922c-3e75fb961821",
+	"735b777d-07af-4439-a8dd-5aa7ead26c8d",
+	'checkIn',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	3,
+	'',
+	"a255e61e-f79c-40d3-827c-5cb0a8f2a06a");
+INSERT INTO O_TPARM
+	VALUES ("2a275a59-df8e-434e-8193-ac9a44dbe920",
+	"9ed10e4d-6e93-42d9-922c-3e75fb961821",
+	'customer',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("5166d6d2-6134-4002-b8d2-e9a25392da00",
+	"735b777d-07af-4439-a8dd-5aa7ead26c8d",
+	'checkOut',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	3,
+	'',
+	"9ed10e4d-6e93-42d9-922c-3e75fb961821");
+INSERT INTO O_TPARM
+	VALUES ("b04eee6e-f2cb-4d2c-8a7a-c469dd69bf9f",
+	"5166d6d2-6134-4002-b8d2-e9a25392da00",
+	'customer',
 	"ba5eda7a-def5-0000-0000-000000000002",
 	0,
 	'',

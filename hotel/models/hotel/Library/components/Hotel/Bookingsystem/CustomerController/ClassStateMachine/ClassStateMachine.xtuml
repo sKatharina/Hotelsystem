@@ -9,34 +9,6 @@ INSERT INTO SM_SM
 	0);
 INSERT INTO SM_MOORE
 	VALUES ("b034e153-bcc3-411f-959d-d9f5b3ef7a94");
-INSERT INTO SM_SGEVT
-	VALUES ("ddd04eee-122c-4c28-9a8a-a03f6432d489",
-	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
-	"00000000-0000-0000-0000-000000000000",
-	"00000000-0000-0000-0000-000000000000",
-	"da1fbca5-e1f2-41e0-b042-c3e492ceaf60",
-	'Port1::createCustomer');
-INSERT INTO SPR_RS_PROXY
-	VALUES ("da1fbca5-e1f2-41e0-b042-c3e492ceaf60",
-	'createCustomer',
-	'',
-	'',
-	1,
-	'../../../Hotel.xtuml');
-INSERT INTO SM_SEVT
-	VALUES ("ddd04eee-122c-4c28-9a8a-a03f6432d489",
-	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_EVT
-	VALUES ("ddd04eee-122c-4c28-9a8a-a03f6432d489",
-	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
-	"00000000-0000-0000-0000-000000000000",
-	1,
-	'createCustomer',
-	0,
-	'',
-	'Port1::createCustomer',
-	'');
 INSERT INTO SM_STATE
 	VALUES ("9be3eb3c-78f1-4045-8ce5-0682372d67e2",
 	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
@@ -44,11 +16,6 @@ INSERT INTO SM_STATE
 	'init',
 	1,
 	0);
-INSERT INTO SM_SEME
-	VALUES ("9be3eb3c-78f1-4045-8ce5-0682372d67e2",
-	"ddd04eee-122c-4c28-9a8a-a03f6432d489",
-	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
-	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_STATE
 	VALUES ("65dde723-1f64-4712-aba8-ab9302f1673e",
 	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
@@ -56,11 +23,6 @@ INSERT INTO SM_STATE
 	'creatingCustomer',
 	2,
 	0);
-INSERT INTO SM_SEME
-	VALUES ("65dde723-1f64-4712-aba8-ab9302f1673e",
-	"ddd04eee-122c-4c28-9a8a-a03f6432d489",
-	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
-	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_STATE
 	VALUES ("d8df9a68-ed8f-47c9-b5cf-b5232bad6675",
 	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
@@ -68,33 +30,20 @@ INSERT INTO SM_STATE
 	'finished',
 	3,
 	0);
-INSERT INTO SM_EIGN
-	VALUES ("d8df9a68-ed8f-47c9-b5cf-b5232bad6675",
-	"ddd04eee-122c-4c28-9a8a-a03f6432d489",
-	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
-	"00000000-0000-0000-0000-000000000000",
-	'');
-INSERT INTO SM_SEME
-	VALUES ("d8df9a68-ed8f-47c9-b5cf-b5232bad6675",
-	"ddd04eee-122c-4c28-9a8a-a03f6432d489",
-	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_NSTXN
+INSERT INTO SM_NETXN
 	VALUES ("5246c934-b08c-4b55-8dcf-cbde29664df1",
 	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
 	"9be3eb3c-78f1-4045-8ce5-0682372d67e2",
-	"ddd04eee-122c-4c28-9a8a-a03f6432d489",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_TXN
 	VALUES ("5246c934-b08c-4b55-8dcf-cbde29664df1",
 	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
 	"65dde723-1f64-4712-aba8-ab9302f1673e",
 	"00000000-0000-0000-0000-000000000000");
-INSERT INTO SM_NSTXN
+INSERT INTO SM_NETXN
 	VALUES ("66bfa1d6-2105-48fd-a6b6-0706865432eb",
 	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
 	"65dde723-1f64-4712-aba8-ab9302f1673e",
-	"ddd04eee-122c-4c28-9a8a-a03f6432d489",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO SM_TXN
 	VALUES ("66bfa1d6-2105-48fd-a6b6-0706865432eb",
@@ -328,7 +277,7 @@ INSERT INTO GD_GE
 	"5246c934-b08c-4b55-8dcf-cbde29664df1",
 	42,
 	0,
-	'hotel::Library::components::Hotel::Bookingsystem::CustomerController::Class State Machine::init::Port1::createCustomer');
+	'hotel::Library::components::Hotel::Bookingsystem::CustomerController::Class State Machine::init::No Event Assigned');
 INSERT INTO GD_CON
 	VALUES ("2305d279-aecc-464e-93bc-2e8ab26d4d71",
 	"00000000-0000-0000-0000-000000000000");
@@ -428,7 +377,7 @@ INSERT INTO GD_GE
 	"66bfa1d6-2105-48fd-a6b6-0706865432eb",
 	42,
 	0,
-	'hotel::Library::components::Hotel::Bookingsystem::CustomerController::Class State Machine::creatingCustomer::Port1::createCustomer');
+	'hotel::Library::components::Hotel::Bookingsystem::CustomerController::Class State Machine::creatingCustomer::No Event Assigned');
 INSERT INTO GD_CON
 	VALUES ("d1a7ab1e-9645-4002-a9cf-0e9f501eb83d",
 	"00000000-0000-0000-0000-000000000000");
