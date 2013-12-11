@@ -75,26 +75,6 @@ INSERT INTO O_TPARM
 	"756f5242-321d-4237-99bf-267fedd72966",
 	'');
 INSERT INTO O_TFR
-	VALUES ("e0d357e2-7fe1-4a46-8839-158a17f26959",
-	"735b777d-07af-4439-a8dd-5aa7ead26c8d",
-	'findBooking',
-	'',
-	"ba5eda7a-def5-0000-0000-000000000000",
-	1,
-	'',
-	1,
-	'',
-	"f665872e-f530-4e83-9b78-f8c7ce16a0d1");
-INSERT INTO O_TPARM
-	VALUES ("dfbdd002-b35c-4950-b319-1eaadeee1cb6",
-	"e0d357e2-7fe1-4a46-8839-158a17f26959",
-	'customer',
-	"ba5eda7a-def5-0000-0000-000000000002",
-	0,
-	'',
-	"00000000-0000-0000-0000-000000000000",
-	'');
-INSERT INTO O_TFR
 	VALUES ("9c29168e-dbf9-4c3f-a39a-184b231da817",
 	"735b777d-07af-4439-a8dd-5aa7ead26c8d",
 	'findBookings',
@@ -104,7 +84,7 @@ INSERT INTO O_TFR
 	'',
 	1,
 	'',
-	"e0d357e2-7fe1-4a46-8839-158a17f26959");
+	"f665872e-f530-4e83-9b78-f8c7ce16a0d1");
 INSERT INTO O_TPARM
 	VALUES ("d8681232-0328-40dd-8005-6d0c5d483551",
 	"9c29168e-dbf9-4c3f-a39a-184b231da817",

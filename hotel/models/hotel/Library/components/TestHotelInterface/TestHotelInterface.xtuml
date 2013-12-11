@@ -195,6 +195,102 @@ INSERT INTO C_PP
 	0,
 	'',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("abe2f589-25fd-44e5-85fb-be6965f21505",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'findBookings',
+	'');
+INSERT INTO C_AS
+	VALUES ("abe2f589-25fd-44e5-85fb-be6965f21505",
+	'findBookings',
+	'',
+	1,
+	"3e5b1dde-7947-4c2e-aec9-c7be38df007d");
+INSERT INTO C_PP
+	VALUES ("2413014e-e071-4149-a471-20bdfdad687c",
+	"abe2f589-25fd-44e5-85fb-be6965f21505",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'pid',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("4390407a-e7c2-463f-83e3-f0aa4ae7223d",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'noBookingsFound',
+	'');
+INSERT INTO C_AS
+	VALUES ("4390407a-e7c2-463f-83e3-f0aa4ae7223d",
+	'noBookingsFound',
+	'',
+	0,
+	"abe2f589-25fd-44e5-85fb-be6965f21505");
+INSERT INTO C_EP
+	VALUES ("9d12e30b-86ca-4fc1-9626-ac75dc466190",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'allBookingsSent',
+	'');
+INSERT INTO C_AS
+	VALUES ("9d12e30b-86ca-4fc1-9626-ac75dc466190",
+	'allBookingsSent',
+	'',
+	0,
+	"4390407a-e7c2-463f-83e3-f0aa4ae7223d");
+INSERT INTO C_EP
+	VALUES ("ff1bbd2b-bbe9-43c9-a46c-4b24aa9c3cbc",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'foundBooking',
+	'');
+INSERT INTO C_AS
+	VALUES ("ff1bbd2b-bbe9-43c9-a46c-4b24aa9c3cbc",
+	'foundBooking',
+	'',
+	0,
+	"9d12e30b-86ca-4fc1-9626-ac75dc466190");
+INSERT INTO C_PP
+	VALUES ("57cc93a4-8d23-4eaf-aac0-e3266e3b1236",
+	"ff1bbd2b-bbe9-43c9-a46c-4b24aa9c3cbc",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'refNr',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("023354e5-7edd-43d8-a3d8-cd05f25699d3",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'addGuests',
+	'');
+INSERT INTO C_AS
+	VALUES ("023354e5-7edd-43d8-a3d8-cd05f25699d3",
+	'addGuests',
+	'',
+	1,
+	"ff1bbd2b-bbe9-43c9-a46c-4b24aa9c3cbc");
+INSERT INTO C_PP
+	VALUES ("b08b7a4c-dc65-4461-b5c4-f835c76eaf13",
+	"023354e5-7edd-43d8-a3d8-cd05f25699d3",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'name',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("52371127-5ca9-4cb4-b28b-a60c8175d740",
+	"023354e5-7edd-43d8-a3d8-cd05f25699d3",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'pid',
+	'',
+	0,
+	'',
+	"b08b7a4c-dc65-4461-b5c4-f835c76eaf13");
 INSERT INTO PE_PE
 	VALUES ("b419a028-8278-4e83-a6b0-ed5b7c89ffff",
 	1,
