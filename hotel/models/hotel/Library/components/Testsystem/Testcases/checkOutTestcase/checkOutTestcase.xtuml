@@ -1,0 +1,32 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("94978c8b-9a14-4b03-8cd6-2256eb8a59c4",
+	'checkOutTestcase',
+	5,
+	'KEY',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_ID
+	VALUES (0,
+	"94978c8b-9a14-4b03-8cd6-2256eb8a59c4");
+INSERT INTO O_ID
+	VALUES (1,
+	"94978c8b-9a14-4b03-8cd6-2256eb8a59c4");
+INSERT INTO O_ID
+	VALUES (2,
+	"94978c8b-9a14-4b03-8cd6-2256eb8a59c4");
+INSERT INTO PE_PE
+	VALUES ("94978c8b-9a14-4b03-8cd6-2256eb8a59c4",
+	1,
+	"2e607b61-98cf-4ab1-9fbe-0cdf365692c1",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("2e607b61-98cf-4ab1-9fbe-0cdf365692c1",
+	"00000000-0000-0000-0000-000000000000",
+	"79cb7e37-5163-4fed-a224-f45d99a1a380",
+	'Testcases',
+	'',
+	0,
+	'../Testcases.xtuml');

@@ -14,7 +14,11 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000001",
 	1,
-	'',
+	'create object instance bkng of BOOKING;
+price = bkng.price;
+paidAmount = bkng.paidAmount;
+isPaid = (price - paidAmount) == 0;
+return isPaid;',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000");
@@ -25,7 +29,8 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000001",
 	1,
-	'',
+	'create object instance bkng of BOOKING;
+return bkng.checkedOut;',
 	1,
 	'',
 	"becac97f-fa70-4005-8ec0-c69cfbe980c4");
@@ -36,10 +41,42 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000001",
 	1,
-	'',
+	'create object instance bkng of BOOKING;
+return bkng.checkedIn;',
 	1,
 	'',
 	"2ff439c6-fa8f-45be-a861-7928ba0cb2f7");
+INSERT INTO O_TFR
+	VALUES ("322f0696-2118-48e6-a22f-66c65eaf4469",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'addGuest',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'create object instance guest of GUEST;
+guest.name = param.name;
+guest.pid = param.pid;',
+	1,
+	'',
+	"e5e2e151-6d2f-4b8f-9c3f-5cab5c4462d4");
+INSERT INTO O_TPARM
+	VALUES ("19c7e559-9087-4b19-9a7b-3c2764cca8c5",
+	"322f0696-2118-48e6-a22f-66c65eaf4469",
+	'name',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("de0c23e2-ade9-423c-a781-e7f51ca0d6da",
+	"322f0696-2118-48e6-a22f-66c65eaf4469",
+	'pid',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"19c7e559-9087-4b19-9a7b-3c2764cca8c5",
+	'');
 INSERT INTO O_NBATTR
 	VALUES ("79f54674-ac99-400b-9abd-545972256c77",
 	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
@@ -146,6 +183,42 @@ INSERT INTO O_ATTR
 	'refNr',
 	0,
 	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("0cafa523-395a-4a81-90ac-8ef36e878fbd",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_BATTR
+	VALUES ("0cafa523-395a-4a81-90ac-8ef36e878fbd",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ATTR
+	VALUES ("0cafa523-395a-4a81-90ac-8ef36e878fbd",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	"9d3fd7e9-9cca-4ee9-949c-41d5a7a0b97a",
+	'checkedIn',
+	'',
+	'',
+	'checkedIn',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("05f7d085-bdb3-4006-a81c-94c69e6f852a",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_BATTR
+	VALUES ("05f7d085-bdb3-4006-a81c-94c69e6f852a",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ATTR
+	VALUES ("05f7d085-bdb3-4006-a81c-94c69e6f852a",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	"0cafa523-395a-4a81-90ac-8ef36e878fbd",
+	'checkedOut',
+	'',
+	'',
+	'checkedOut',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000001",
 	'',
 	'');
 INSERT INTO O_ID

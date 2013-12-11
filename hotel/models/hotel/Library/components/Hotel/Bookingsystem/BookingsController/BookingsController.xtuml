@@ -4,7 +4,7 @@ INSERT INTO O_OBJ
 	VALUES ("735b777d-07af-4439-a8dd-5aa7ead26c8d",
 	'BookingsController',
 	9,
-	'KEY',
+	'BOOKINGSCONTROLLER',
 	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
@@ -144,6 +144,50 @@ INSERT INTO O_TPARM
 	0,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("b3a5d069-50b4-4fad-b4a7-ce6dc8a193b1",
+	"735b777d-07af-4439-a8dd-5aa7ead26c8d",
+	'addGuest',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'select many Bookings from instances of BOOKING;
+
+for each BOOKING in Bookings
+	if BOOKING.refNr == param.refNr
+		BOOKING.addGuest(name: param.guestName, pid: param.guestPid);
+	end if;
+end for;',
+	1,
+	'',
+	"a255e61e-f79c-40d3-827c-5cb0a8f2a06a");
+INSERT INTO O_TPARM
+	VALUES ("ca2a62c0-b8db-4d03-b5f9-2e307975a2f5",
+	"b3a5d069-50b4-4fad-b4a7-ce6dc8a193b1",
+	'refNr',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("1c0e4210-5859-42ce-9ed4-cc066d7de52a",
+	"b3a5d069-50b4-4fad-b4a7-ce6dc8a193b1",
+	'guestName',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"ca2a62c0-b8db-4d03-b5f9-2e307975a2f5",
+	'');
+INSERT INTO O_TPARM
+	VALUES ("d984107e-5ecf-4904-bbad-78cf2978a456",
+	"b3a5d069-50b4-4fad-b4a7-ce6dc8a193b1",
+	'guestPid',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"1c0e4210-5859-42ce-9ed4-cc066d7de52a",
 	'');
 INSERT INTO O_ID
 	VALUES (0,
