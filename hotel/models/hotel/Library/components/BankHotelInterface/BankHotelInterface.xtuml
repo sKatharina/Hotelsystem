@@ -1,0 +1,72 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("1c73d232-8f4f-4733-8fd8-45c951f35d0c",
+	"00000000-0000-0000-0000-000000000000",
+	'BankHotelInterface',
+	'');
+INSERT INTO C_EP
+	VALUES ("43bf4b32-55e6-4352-b3c4-ec3325fcb643",
+	"1c73d232-8f4f-4733-8fd8-45c951f35d0c",
+	-1,
+	'paymentValid',
+	'');
+INSERT INTO C_AS
+	VALUES ("43bf4b32-55e6-4352-b3c4-ec3325fcb643",
+	'paymentValid',
+	'',
+	1,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("1ebd9b9b-90c8-4152-ab1e-c6142c1ec3a1",
+	"43bf4b32-55e6-4352-b3c4-ec3325fcb643",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'cardNr',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("a35e58dd-7d91-4fdc-90ac-c10cd4f9a070",
+	"43bf4b32-55e6-4352-b3c4-ec3325fcb643",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'ownerPid',
+	'',
+	0,
+	'',
+	"1ebd9b9b-90c8-4152-ab1e-c6142c1ec3a1");
+INSERT INTO C_EP
+	VALUES ("0bb195fe-0402-4f0b-8c12-1b1b938cfc66",
+	"1c73d232-8f4f-4733-8fd8-45c951f35d0c",
+	-1,
+	'answer',
+	'');
+INSERT INTO C_AS
+	VALUES ("0bb195fe-0402-4f0b-8c12-1b1b938cfc66",
+	'answer',
+	'',
+	0,
+	"43bf4b32-55e6-4352-b3c4-ec3325fcb643");
+INSERT INTO C_PP
+	VALUES ("d6ec67f0-0149-4613-9d97-97be29322922",
+	"0bb195fe-0402-4f0b-8c12-1b1b938cfc66",
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'valid',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("1c73d232-8f4f-4733-8fd8-45c951f35d0c",
+	1,
+	"6c7e3efc-99f6-4e25-b853-8fa80326ce44",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("6c7e3efc-99f6-4e25-b853-8fa80326ce44",
+	"00000000-0000-0000-0000-000000000000",
+	"79cb7e37-5163-4fed-a224-f45d99a1a380",
+	'components',
+	'',
+	0,
+	'../components.xtuml');
