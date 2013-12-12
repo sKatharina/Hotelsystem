@@ -21,7 +21,7 @@ INSERT INTO SPR_RS_PROXY
 	'isBillPaid',
 	'',
 	'',
-	3,
+	1,
 	'../../../Hotel.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("9d1602ec-07e6-45c9-8a37-8fc847e4731b",
@@ -49,7 +49,7 @@ INSERT INTO SPR_RS_PROXY
 	'sendBooking',
 	'',
 	'',
-	3,
+	1,
 	'../../../Hotel.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("9954b434-a903-4408-94f4-0efed6f2f542",
@@ -77,7 +77,7 @@ INSERT INTO SPR_RS_PROXY
 	'checkedOutBooking',
 	'',
 	'',
-	3,
+	1,
 	'../../../Hotel.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("3680b234-3fe9-4b24-aebe-681a5b99beb3",
@@ -105,7 +105,7 @@ INSERT INTO SPR_RS_PROXY
 	'checkedInBooking',
 	'',
 	'',
-	3,
+	1,
 	'../../../Hotel.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("19e0023d-9ea9-4b23-825c-8ac40839540b",
@@ -406,7 +406,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("eb6f3429-2fcd-4bcb-bc82-91312b2cd05a",
 	"f326cd5b-a6a5-4818-97f3-24226a60385b",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_MOAH
@@ -427,7 +427,7 @@ if empty Bookings
 else
 	for each BOOKING in Bookings
 		if BOOKING.refNr == param.refNr
-			if BOOKING.isPaid()
+			if BOOKING.isPaid==true
 				send Port1::checkOutBillPaid();
 			else
 				send Port1::checkOutBillNotPaid(amountNotPaid: BOOKING.paidAmount);
@@ -473,7 +473,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("3254b32f-14cb-47b5-b37e-9f3438b40b14",
 	"f326cd5b-a6a5-4818-97f3-24226a60385b",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_TAH
@@ -486,7 +486,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("57aaae37-90fd-4b08-8854-b804327cfda0",
 	"f326cd5b-a6a5-4818-97f3-24226a60385b",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_MOAH
@@ -527,7 +527,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("ae7c23c7-4444-434e-a301-43d20fcdb0d6",
 	"f326cd5b-a6a5-4818-97f3-24226a60385b",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_TAH
@@ -540,7 +540,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("44be8dc9-6711-4bcd-9330-37a06178e641",
 	"f326cd5b-a6a5-4818-97f3-24226a60385b",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO GD_MD

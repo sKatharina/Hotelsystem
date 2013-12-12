@@ -190,30 +190,13 @@ INSERT INTO SPR_RS
 	VALUES ("1cea37ae-c2ba-41de-a51f-84d703267bc6",
 	'paymentValid',
 	'',
-	'send Port1::answer(valid:true);',
+	'',
 	1);
 INSERT INTO C_EP_PROXY
 	VALUES ("43bf4b32-55e6-4352-b3c4-ec3325fcb643",
 	"1c73d232-8f4f-4733-8fd8-45c951f35d0c",
 	-1,
 	'paymentValid',
-	'',
-	'../BankHotelInterface/BankHotelInterface.xtuml');
-INSERT INTO SPR_REP
-	VALUES ("b71c3e29-27c3-4366-9488-9381dedf5c9b",
-	"0bb195fe-0402-4f0b-8c12-1b1b938cfc66",
-	"f9b9d7a9-6c66-4659-b276-9fe0b8d7dea4");
-INSERT INTO SPR_RS
-	VALUES ("b71c3e29-27c3-4366-9488-9381dedf5c9b",
-	'answer',
-	'',
-	'',
-	3);
-INSERT INTO C_EP_PROXY
-	VALUES ("0bb195fe-0402-4f0b-8c12-1b1b938cfc66",
-	"1c73d232-8f4f-4733-8fd8-45c951f35d0c",
-	-1,
-	'answer',
 	'',
 	'../BankHotelInterface/BankHotelInterface.xtuml');
 INSERT INTO C_I_PROXY

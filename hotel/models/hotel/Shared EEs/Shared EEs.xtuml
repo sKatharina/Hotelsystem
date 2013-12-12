@@ -50,6 +50,30 @@ INSERT INTO DIM_ELE
 	VALUES ("2ee2bd19-c183-48a4-8ed2-321d9901b101",
 	0,
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_GE
+	VALUES ("908a2fb8-b55f-47d8-a5e2-13719bbdfd1a",
+	"376b9872-5a40-485d-a075-a03dc04c715b",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	12,
+	0,
+	'hotel::Shared EEs::Time');
+INSERT INTO GD_SHP
+	VALUES ("908a2fb8-b55f-47d8-a5e2-13719bbdfd1a");
+INSERT INTO GD_NCS
+	VALUES ("908a2fb8-b55f-47d8-a5e2-13719bbdfd1a");
+INSERT INTO DIM_ND
+	VALUES (200.000000,
+	150.000000,
+	"908a2fb8-b55f-47d8-a5e2-13719bbdfd1a");
+INSERT INTO DIM_GE
+	VALUES (220.000000,
+	0.000000,
+	"908a2fb8-b55f-47d8-a5e2-13719bbdfd1a",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("908a2fb8-b55f-47d8-a5e2-13719bbdfd1a",
+	0,
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_DIA
 	VALUES ("376b9872-5a40-485d-a075-a03dc04c715b",
 	'',
@@ -105,6 +129,368 @@ INSERT INTO S_BPARM
 	'');
 INSERT INTO PE_PE
 	VALUES ("57741329-c5fa-44c3-add5-11900bc17652",
+	1,
+	"741a7ac5-e7f0-47c6-b6a1-68fb5eb60d22",
+	"00000000-0000-0000-0000-000000000000",
+	5);
+INSERT INTO S_EE
+	VALUES ("952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'Time',
+	'The Time external entity provides date, timestamp, and timer related operations.',
+	'TIM',
+	"00000000-0000-0000-0000-000000000000",
+	'',
+	'Time');
+INSERT INTO S_BRG
+	VALUES ("deef642e-03cc-4c0d-89af-5539e5dd84c3",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'current_date',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	'',
+	0,
+	'');
+INSERT INTO S_BRG
+	VALUES ("53c74e20-eace-4139-82f7-ca797fa320bc",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'create_date',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("05d79f70-c409-4dce-965e-b9fda53feee1",
+	"53c74e20-eace-4139-82f7-ca797fa320bc",
+	'second',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"60b204f6-b9a7-4ece-a16a-c8c7ba30afc8",
+	'');
+INSERT INTO S_BPARM
+	VALUES ("8bf7c3f9-0f8c-49f5-9ecb-ff401629a666",
+	"53c74e20-eace-4139-82f7-ca797fa320bc",
+	'minute',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"5a1f00e2-8816-40a1-97e5-16cd3ef4eef5",
+	'');
+INSERT INTO S_BPARM
+	VALUES ("5a1f00e2-8816-40a1-97e5-16cd3ef4eef5",
+	"53c74e20-eace-4139-82f7-ca797fa320bc",
+	'hour',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"e8a789b4-f5c1-40c2-bd9d-c5814bdd6711",
+	'');
+INSERT INTO S_BPARM
+	VALUES ("e8a789b4-f5c1-40c2-bd9d-c5814bdd6711",
+	"53c74e20-eace-4139-82f7-ca797fa320bc",
+	'day',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BPARM
+	VALUES ("60b204f6-b9a7-4ece-a16a-c8c7ba30afc8",
+	"53c74e20-eace-4139-82f7-ca797fa320bc",
+	'month',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"8bf7c3f9-0f8c-49f5-9ecb-ff401629a666",
+	'');
+INSERT INTO S_BPARM
+	VALUES ("052651c5-1de2-46b1-8523-185b43935f02",
+	"53c74e20-eace-4139-82f7-ca797fa320bc",
+	'year',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"05d79f70-c409-4dce-965e-b9fda53feee1",
+	'');
+INSERT INTO S_BRG
+	VALUES ("59124b79-5ca9-4687-8eda-deecd6e8e4a3",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'get_second',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("968ae9c4-a79f-4b46-b08b-45c3a53e1058",
+	"59124b79-5ca9-4687-8eda-deecd6e8e4a3",
+	'date',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("e44f1809-a5dc-49b5-b516-4bfafdf888a0",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'get_minute',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("b8d5ade4-64a8-420f-9a1f-779f5ad5ddf8",
+	"e44f1809-a5dc-49b5-b516-4bfafdf888a0",
+	'date',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("2cde6a08-d863-458e-b2dc-69c23a05969b",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'get_hour',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("96ae287b-dcbf-431a-b3d5-b139921636bf",
+	"2cde6a08-d863-458e-b2dc-69c23a05969b",
+	'date',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("e17a9a8a-d843-4a43-b005-ef355df2eead",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'get_day',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("51f40f46-f4d8-414f-a829-ffa258dc5fda",
+	"e17a9a8a-d843-4a43-b005-ef355df2eead",
+	'date',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("450f84af-56db-4bf3-aaa1-902d843ad06a",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'get_month',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("9c74d1ed-06b9-4f61-821c-ce8df66a6a60",
+	"450f84af-56db-4bf3-aaa1-902d843ad06a",
+	'date',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("108b13a2-2218-45c4-b97d-4b36ae02c8a9",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'get_year',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("4c77471c-7197-4ccd-958e-eb3f949d7284",
+	"108b13a2-2218-45c4-b97d-4b36ae02c8a9",
+	'date',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("6df301e2-47ba-4186-9c68-bc314522532f",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'current_clock',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000010",
+	'',
+	0,
+	'');
+INSERT INTO S_BRG
+	VALUES ("5e908e14-3c90-44d8-9f32-1cad851731c2",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'timer_start',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-00000000000f",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("75fb0f4a-351b-4db0-929f-e21daf81cdce",
+	"5e908e14-3c90-44d8-9f32-1cad851731c2",
+	'microseconds',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"8c7582b3-58af-458e-b997-5e4d225b2151",
+	'');
+INSERT INTO S_BPARM
+	VALUES ("8c7582b3-58af-458e-b997-5e4d225b2151",
+	"5e908e14-3c90-44d8-9f32-1cad851731c2",
+	'event_inst',
+	"ba5eda7a-def5-0000-0000-00000000000a",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("3de5db84-adde-441b-a9d3-11a3377ef423",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'timer_start_recurring',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-00000000000f",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("5175fe7b-a80b-4051-ae3a-45cd0227cfde",
+	"3de5db84-adde-441b-a9d3-11a3377ef423",
+	'microseconds',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"122dd3ac-ed43-40de-8ccc-40a9f61c8f3f",
+	'');
+INSERT INTO S_BPARM
+	VALUES ("122dd3ac-ed43-40de-8ccc-40a9f61c8f3f",
+	"3de5db84-adde-441b-a9d3-11a3377ef423",
+	'event_inst',
+	"ba5eda7a-def5-0000-0000-00000000000a",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("6133dd62-8f4f-4ecb-81a0-934a323106cb",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'timer_remaining_time',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("28ed50c6-18b0-4ec0-a1e8-25c44ad2225e",
+	"6133dd62-8f4f-4ecb-81a0-934a323106cb",
+	'timer_inst_ref',
+	"ba5eda7a-def5-0000-0000-00000000000f",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("1ba5a182-cef9-4318-be4c-5ac220d8c82f",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'timer_reset_time',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("c75d50cb-1760-4452-8624-e87fcb3bf83a",
+	"1ba5a182-cef9-4318-be4c-5ac220d8c82f",
+	'timer_inst_ref',
+	"ba5eda7a-def5-0000-0000-00000000000f",
+	0,
+	'',
+	"de479a30-4bf9-4e7d-9ed3-3717ea64b2ea",
+	'');
+INSERT INTO S_BPARM
+	VALUES ("de479a30-4bf9-4e7d-9ed3-3717ea64b2ea",
+	"1ba5a182-cef9-4318-be4c-5ac220d8c82f",
+	'microseconds',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("d043790f-8499-4169-8c40-394bcb6d7113",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'timer_add_time',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("87c5ffd9-1f07-478d-8a9a-37f438ac7fee",
+	"d043790f-8499-4169-8c40-394bcb6d7113",
+	'timer_inst_ref',
+	"ba5eda7a-def5-0000-0000-00000000000f",
+	0,
+	'',
+	"3bfbef80-a209-4e12-94c8-b1713904f76e",
+	'');
+INSERT INTO S_BPARM
+	VALUES ("3bfbef80-a209-4e12-94c8-b1713904f76e",
+	"d043790f-8499-4169-8c40-394bcb6d7113",
+	'microseconds',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO S_BRG
+	VALUES ("7233d3e6-d2e1-453a-a6a5-e431519b4865",
+	"952ac25d-b022-4a9d-81b2-29891acc67f3",
+	'timer_cancel',
+	'',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	0,
+	'');
+INSERT INTO S_BPARM
+	VALUES ("026b2c2b-a088-4f8c-bd9e-222cba0720dc",
+	"7233d3e6-d2e1-453a-a6a5-e431519b4865",
+	'timer_inst_ref',
+	"ba5eda7a-def5-0000-0000-00000000000f",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO PE_PE
+	VALUES ("952ac25d-b022-4a9d-81b2-29891acc67f3",
 	1,
 	"741a7ac5-e7f0-47c6-b6a1-68fb5eb60d22",
 	"00000000-0000-0000-0000-000000000000",

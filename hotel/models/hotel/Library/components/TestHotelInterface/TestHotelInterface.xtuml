@@ -291,15 +291,6 @@ INSERT INTO C_PP
 	0,
 	'',
 	"b08b7a4c-dc65-4461-b5c4-f835c76eaf13");
-INSERT INTO C_PP
-	VALUES ("1a567e6b-af33-4d5c-8fd5-60c071f51d04",
-	"023354e5-7edd-43d8-a3d8-cd05f25699d3",
-	"ba5eda7a-def5-0000-0000-000000000002",
-	'refNr',
-	'',
-	0,
-	'',
-	"52371127-5ca9-4cb4-b28b-a60c8175d740");
 INSERT INTO C_EP
 	VALUES ("400d5f26-ee4d-4e09-8ffd-f480516e877f",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
@@ -348,6 +339,15 @@ INSERT INTO C_AS
 	'',
 	0,
 	"c1b72650-2f6c-4609-adb3-96c83c3648ce");
+INSERT INTO C_PP
+	VALUES ("1c441043-6969-4892-867c-571212a0f2c3",
+	"a0acdd92-0570-46d2-afb4-0e1bc8990634",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'pid',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO C_EP
 	VALUES ("647f2318-57a2-46cd-8217-1b25387847e0",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
@@ -360,30 +360,15 @@ INSERT INTO C_AS
 	'',
 	0,
 	"a0acdd92-0570-46d2-afb4-0e1bc8990634");
-INSERT INTO C_EP
-	VALUES ("10e0ecc4-3b01-4eb6-af28-4fb83b7d5696",
-	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
-	-1,
-	'paymentDone',
-	'');
-INSERT INTO C_AS
-	VALUES ("10e0ecc4-3b01-4eb6-af28-4fb83b7d5696",
-	'paymentDone',
+INSERT INTO C_PP
+	VALUES ("ad3b9486-8b63-49b2-af69-0efd24bb0fd5",
+	"647f2318-57a2-46cd-8217-1b25387847e0",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'pid',
 	'',
 	0,
-	"647f2318-57a2-46cd-8217-1b25387847e0");
-INSERT INTO C_EP
-	VALUES ("6799c818-a75b-4c16-9091-b9e03a30c11c",
-	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
-	-1,
-	'bookingDone',
-	'');
-INSERT INTO C_AS
-	VALUES ("6799c818-a75b-4c16-9091-b9e03a30c11c",
-	'bookingDone',
 	'',
-	0,
-	"10e0ecc4-3b01-4eb6-af28-4fb83b7d5696");
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO C_EP
 	VALUES ("9f220b73-0a9c-464d-8173-49f6e30a4beb",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
@@ -395,7 +380,7 @@ INSERT INTO C_AS
 	'findCustomer',
 	'',
 	1,
-	"6799c818-a75b-4c16-9091-b9e03a30c11c");
+	"647f2318-57a2-46cd-8217-1b25387847e0");
 INSERT INTO C_PP
 	VALUES ("2b690e03-8706-4821-8a89-a34a21c93c08",
 	"9f220b73-0a9c-464d-8173-49f6e30a4beb",
@@ -444,15 +429,24 @@ INSERT INTO C_PP
 	0,
 	'',
 	"c42a003f-6b39-4ad9-a1f8-501d443a4380");
+INSERT INTO C_PP
+	VALUES ("cf5171d5-9b5f-4514-855c-79250e05506f",
+	"adc08974-b443-4dc4-ba83-2136d9214a72",
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	'expireDate',
+	'',
+	0,
+	'',
+	"fa7b01b0-dd15-46a2-8138-b78fbca19a73");
 INSERT INTO C_EP
 	VALUES ("9729c322-7035-43b8-a8e4-637b8097838c",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
 	-1,
-	'payInAdvance',
+	'payBooking',
 	'');
 INSERT INTO C_AS
 	VALUES ("9729c322-7035-43b8-a8e4-637b8097838c",
-	'payInAdvance',
+	'payBooking',
 	'',
 	1,
 	"adc08974-b443-4dc4-ba83-2136d9214a72");
@@ -498,6 +492,42 @@ INSERT INTO C_AS
 	'',
 	1,
 	"67ac6ba1-955c-420a-8422-422555199769");
+INSERT INTO C_PP
+	VALUES ("754f6c77-67b9-49b2-a45a-04f692a221b1",
+	"1b6c26c2-a69a-4a7c-82ed-dc858c20536c",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'customerPid',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("6bb7333b-91f5-4fee-90de-22d8391a6f2c",
+	"1b6c26c2-a69a-4a7c-82ed-dc858c20536c",
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	'startDate',
+	'',
+	0,
+	'',
+	"754f6c77-67b9-49b2-a45a-04f692a221b1");
+INSERT INTO C_PP
+	VALUES ("0c2c1d1a-acd4-4c5a-84f2-0e5da7154d8b",
+	"1b6c26c2-a69a-4a7c-82ed-dc858c20536c",
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	'endDate',
+	'',
+	0,
+	'',
+	"6bb7333b-91f5-4fee-90de-22d8391a6f2c");
+INSERT INTO C_PP
+	VALUES ("7a3fe591-24c6-47fd-a40d-418b9deb5183",
+	"1b6c26c2-a69a-4a7c-82ed-dc858c20536c",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'roomNr',
+	'',
+	0,
+	'',
+	"0c2c1d1a-acd4-4c5a-84f2-0e5da7154d8b");
 INSERT INTO C_EP
 	VALUES ("621282e2-05d1-44cb-97a6-20efd3e2e1d2",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",

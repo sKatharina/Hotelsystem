@@ -21,7 +21,7 @@ INSERT INTO SPR_PS_PROXY
 	'foundBooking',
 	'',
 	'',
-	3,
+	1,
 	'../../../Testsystem.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("e97bcaf8-e667-47f9-9f3a-f76c46cb0110",
@@ -49,7 +49,7 @@ INSERT INTO SPR_PS_PROXY
 	'noBookingsFound',
 	'',
 	'',
-	3,
+	1,
 	'../../../Testsystem.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("b966878a-240c-4426-9b62-27a675df7318",
@@ -77,7 +77,7 @@ INSERT INTO SPR_PS_PROXY
 	'allBookingsSent',
 	'',
 	'',
-	3,
+	1,
 	'../../../Testsystem.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("e8ec59de-0cfc-4290-a5e2-6cb7bb758f8d",
@@ -105,7 +105,7 @@ INSERT INTO SPR_PS_PROXY
 	'checkIn',
 	'',
 	'',
-	3,
+	1,
 	'../../../Testsystem.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("ca0e62a2-b357-4ff1-94ec-d07207e5ad9a",
@@ -529,7 +529,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("7e06d783-0cdc-4e0c-bb43-3276a666132c",
 	"3ed65529-78cc-4be3-b123-5cb907431571",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_TAH
@@ -542,7 +542,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("ed62310c-ce12-49bc-80ed-d80bbd734817",
 	"3ed65529-78cc-4be3-b123-5cb907431571",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_TAH
@@ -555,7 +555,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("68312242-4094-4e0c-9e5c-96721bc66602",
 	"3ed65529-78cc-4be3-b123-5cb907431571",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_TAH
@@ -568,7 +568,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("e1e34e28-25a7-40b9-b6a7-6c84474cf783",
 	"3ed65529-78cc-4be3-b123-5cb907431571",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_MOAH
@@ -581,7 +581,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("98ebbcca-f284-4d24-8119-e564bbce32bf",
 	"3ed65529-78cc-4be3-b123-5cb907431571",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_MOAH
@@ -610,7 +610,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("042103c5-95b6-44e2-8628-f7d86460fb0f",
 	"3ed65529-78cc-4be3-b123-5cb907431571",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_TAH
@@ -623,7 +623,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("73b6c2af-6e1c-4a43-8be7-a9cd2eba584c",
 	"3ed65529-78cc-4be3-b123-5cb907431571",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_TAH
@@ -636,7 +636,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("66ee9c77-c8ac-4d3f-bd8a-0c84dfeb5670",
 	"3ed65529-78cc-4be3-b123-5cb907431571",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO GD_MD

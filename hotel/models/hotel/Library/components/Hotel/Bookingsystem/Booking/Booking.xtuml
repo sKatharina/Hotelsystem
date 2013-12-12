@@ -8,21 +8,6 @@ INSERT INTO O_OBJ
 	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
-	VALUES ("becac97f-fa70-4005-8ec0-c69cfbe980c4",
-	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
-	'isPaid',
-	'',
-	"ba5eda7a-def5-0000-0000-000000000001",
-	1,
-	'create object instance bkng of BOOKING;
-price = bkng.price;
-paidAmount = bkng.paidAmount;
-isPaid = (price - paidAmount) == 0;
-return isPaid;',
-	1,
-	'',
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO O_TFR
 	VALUES ("2ff439c6-fa8f-45be-a861-7928ba0cb2f7",
 	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
 	'hasCheckedOut',
@@ -33,7 +18,7 @@ INSERT INTO O_TFR
 return bkng.checkedOut;',
 	1,
 	'',
-	"becac97f-fa70-4005-8ec0-c69cfbe980c4");
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
 	VALUES ("e5e2e151-6d2f-4b8f-9c3f-5cab5c4462d4",
 	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
@@ -105,12 +90,12 @@ INSERT INTO O_ATTR
 	VALUES ("9f078272-a820-466f-ba59-490c3f471137",
 	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
 	"79f54674-ac99-400b-9abd-545972256c77",
-	'paidAmount',
+	'isPaid',
 	'',
 	'',
-	'paidAmount',
+	'isPaid',
 	0,
-	"ba5eda7a-def5-0000-0000-000000000003",
+	"ba5eda7a-def5-0000-0000-000000000001",
 	'',
 	'');
 INSERT INTO O_NBATTR
@@ -219,6 +204,24 @@ INSERT INTO O_ATTR
 	'checkedOut',
 	0,
 	"ba5eda7a-def5-0000-0000-000000000001",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("2462e978-8537-4e45-8efc-8dd1f5b10f73",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_BATTR
+	VALUES ("2462e978-8537-4e45-8efc-8dd1f5b10f73",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
+INSERT INTO O_ATTR
+	VALUES ("2462e978-8537-4e45-8efc-8dd1f5b10f73",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	"05f7d085-bdb3-4006-a81c-94c69e6f852a",
+	'paidAmount',
+	'',
+	'',
+	'paidAmount',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
 	'',
 	'');
 INSERT INTO O_ID
