@@ -68,6 +68,11 @@ INSERT INTO DIM_CON
 	5804.000000,
 	3486.000000,
 	"e28c75e1-d7bc-45cc-82b3-8013273f39aa");
+INSERT INTO DIM_CON
+	VALUES ("ace90b74-39ae-4598-ab9a-b7552e990fc6",
+	4704.000000,
+	3900.000000,
+	"e28c75e1-d7bc-45cc-82b3-8013273f39aa");
 INSERT INTO GD_GE
 	VALUES ("0a77c9b8-ce06-41ec-8ccb-65640550268e",
 	"5badb663-8145-4b45-a659-0eef846d14cb",
@@ -192,6 +197,106 @@ INSERT INTO DIM_ED
 	VALUES ("7ad50360-2b4d-4b6a-b8c2-6d84722523a0",
 	"00000000-0000-0000-0000-000000000000",
 	"5cf5598e-1868-48ff-a427-7497ad794322");
+INSERT INTO GD_GE
+	VALUES ("4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	"5badb663-8145-4b45-a659-0eef846d14cb",
+	"87df19e4-940e-4621-a671-4f0a16e116bf",
+	94,
+	0,
+	'hotel::Library::components::Hotel::Port2::BankHotelInterface');
+INSERT INTO GD_CON
+	VALUES ("4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("b3f680e5-0c22-44f7-b915-47d364294daf",
+	"4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"b3f680e5-0c22-44f7-b915-47d364294daf");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"b3f680e5-0c22-44f7-b915-47d364294daf",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("b3f680e5-0c22-44f7-b915-47d364294daf",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("63e8bab8-236b-4bc2-a061-501722993697",
+	"4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	3,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"63e8bab8-236b-4bc2-a061-501722993697");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"63e8bab8-236b-4bc2-a061-501722993697",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("63e8bab8-236b-4bc2-a061-501722993697",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("e41a1b6c-f33d-4229-9228-bc008529f3f1",
+	"4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"e41a1b6c-f33d-4229-9228-bc008529f3f1");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"e41a1b6c-f33d-4229-9228-bc008529f3f1",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("e41a1b6c-f33d-4229-9228-bc008529f3f1",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("58932fef-955e-43c6-8208-3e6d0210cbda",
+	"4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	"00000000-0000-0000-0000-000000000000",
+	"bd7e9691-c48b-4723-981b-2e507e564346",
+	"725fa706-3e88-4197-a48d-b01e598e9954");
+INSERT INTO DIM_WAY
+	VALUES ("bd7e9691-c48b-4723-981b-2e507e564346",
+	4704.000000,
+	3900.000000,
+	"4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("725fa706-3e88-4197-a48d-b01e598e9954",
+	4704.000000,
+	3972.000000,
+	"4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	"00000000-0000-0000-0000-000000000000",
+	"bd7e9691-c48b-4723-981b-2e507e564346");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("4663d3dd-47ec-4397-bdd5-3c1b0adeddfa",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("ace90b74-39ae-4598-ab9a-b7552e990fc6",
+	"00000000-0000-0000-0000-000000000000",
+	"4663d3dd-47ec-4397-bdd5-3c1b0adeddfa");
 INSERT INTO DIM_DIA
 	VALUES ("5badb663-8145-4b45-a659-0eef846d14cb",
 	'',
@@ -380,7 +485,7 @@ INSERT INTO SPR_REP
 	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
 INSERT INTO SPR_RS
 	VALUES ("bc7cfa29-25ba-4567-bc82-6c512914aaeb",
-	'availableRooms',
+	'availableRoom',
 	'',
 	'',
 	3);
@@ -388,7 +493,7 @@ INSERT INTO C_EP_PROXY
 	VALUES ("3e5b1dde-7947-4c2e-aec9-c7be38df007d",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
 	-1,
-	'availableRooms',
+	'availableRoom',
 	'',
 	'../TestHotelInterface/TestHotelInterface.xtuml');
 INSERT INTO SPR_REP
@@ -476,12 +581,273 @@ INSERT INTO C_EP_PROXY
 	'addGuests',
 	'',
 	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("74c1f556-7739-49eb-9584-a90ef08a5bff",
+	"400d5f26-ee4d-4e09-8ffd-f480516e877f",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("74c1f556-7739-49eb-9584-a90ef08a5bff",
+	'noRooms',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("400d5f26-ee4d-4e09-8ffd-f480516e877f",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'noRooms',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("c7f2df45-a25c-46ba-b6a7-46adcb18a419",
+	"32005baa-1604-4a7a-a30e-7bcf61a51a74",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("c7f2df45-a25c-46ba-b6a7-46adcb18a419",
+	'allRoomsSent',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("32005baa-1604-4a7a-a30e-7bcf61a51a74",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'allRoomsSent',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("3d3b4747-879c-4cf4-ad94-d4bb01d28ff6",
+	"c1b72650-2f6c-4609-adb3-96c83c3648ce",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("3d3b4747-879c-4cf4-ad94-d4bb01d28ff6",
+	'noCustomerFound',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("c1b72650-2f6c-4609-adb3-96c83c3648ce",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'noCustomerFound',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("65562c8a-f1ba-4351-9217-e4c25372df40",
+	"a0acdd92-0570-46d2-afb4-0e1bc8990634",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("65562c8a-f1ba-4351-9217-e4c25372df40",
+	'customerFound',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("a0acdd92-0570-46d2-afb4-0e1bc8990634",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'customerFound',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("63711bee-e833-47e0-9e25-7bfebbcc47d9",
+	"647f2318-57a2-46cd-8217-1b25387847e0",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("63711bee-e833-47e0-9e25-7bfebbcc47d9",
+	'creditCardAdded',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("647f2318-57a2-46cd-8217-1b25387847e0",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'creditCardAdded',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("3b01cdd2-766f-4475-b084-c444905ce0e7",
+	"10e0ecc4-3b01-4eb6-af28-4fb83b7d5696",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("3b01cdd2-766f-4475-b084-c444905ce0e7",
+	'paymentDone',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("10e0ecc4-3b01-4eb6-af28-4fb83b7d5696",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'paymentDone',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("42d1dc54-ddb9-4fb4-9bcd-28b92d136435",
+	"6799c818-a75b-4c16-9091-b9e03a30c11c",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("42d1dc54-ddb9-4fb4-9bcd-28b92d136435",
+	'bookingDone',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("6799c818-a75b-4c16-9091-b9e03a30c11c",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'bookingDone',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("d6f27a69-98e1-401e-8233-25c4c8c92563",
+	"9f220b73-0a9c-464d-8173-49f6e30a4beb",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("d6f27a69-98e1-401e-8233-25c4c8c92563",
+	'findCustomer',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("9f220b73-0a9c-464d-8173-49f6e30a4beb",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'findCustomer',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("5853014d-be16-483b-a09d-03db0fb1839a",
+	"adc08974-b443-4dc4-ba83-2136d9214a72",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("5853014d-be16-483b-a09d-03db0fb1839a",
+	'addCreditCard',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("adc08974-b443-4dc4-ba83-2136d9214a72",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'addCreditCard',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("ea9ec842-8b3c-4c81-8811-c8a49550b8be",
+	"9729c322-7035-43b8-a8e4-637b8097838c",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("ea9ec842-8b3c-4c81-8811-c8a49550b8be",
+	'payInAdvance',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("9729c322-7035-43b8-a8e4-637b8097838c",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'payInAdvance',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("9aaadf8a-2b8b-420f-a641-b9903be37600",
+	"67ac6ba1-955c-420a-8422-422555199769",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("9aaadf8a-2b8b-420f-a641-b9903be37600",
+	'bookingCreated',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("67ac6ba1-955c-420a-8422-422555199769",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'bookingCreated',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("723d29b0-0ce3-4ba3-bccc-fc1b7fc660ca",
+	"1b6c26c2-a69a-4a7c-82ed-dc858c20536c",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("723d29b0-0ce3-4ba3-bccc-fc1b7fc660ca",
+	'createBooking',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("1b6c26c2-a69a-4a7c-82ed-dc858c20536c",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'createBooking',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("b419a028-8278-4e83-a6b0-ed5b7c89ffff",
 	"00000000-0000-0000-0000-000000000000",
 	'TestHotelInterface',
 	'',
 	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO C_PO
+	VALUES ("07213bb8-3a8e-406f-92b3-75556e91eba0",
+	"bd4c9c3e-5437-4bc4-b6b1-696da2dad7b0",
+	'Port2',
+	0,
+	0);
+INSERT INTO C_IR
+	VALUES ("87df19e4-940e-4621-a671-4f0a16e116bf",
+	"1c73d232-8f4f-4733-8fd8-45c951f35d0c",
+	"00000000-0000-0000-0000-000000000000",
+	"07213bb8-3a8e-406f-92b3-75556e91eba0");
+INSERT INTO C_P
+	VALUES ("87df19e4-940e-4621-a671-4f0a16e116bf",
+	'BankHotelInterface',
+	'Unnamed Interface',
+	'',
+	'Hotel::Port2::BankHotelInterface');
+INSERT INTO SPR_PEP
+	VALUES ("27424f8a-eec9-4f47-a790-0753cbe98d94",
+	"43bf4b32-55e6-4352-b3c4-ec3325fcb643",
+	"87df19e4-940e-4621-a671-4f0a16e116bf");
+INSERT INTO SPR_PS
+	VALUES ("27424f8a-eec9-4f47-a790-0753cbe98d94",
+	'paymentValid',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("43bf4b32-55e6-4352-b3c4-ec3325fcb643",
+	"1c73d232-8f4f-4733-8fd8-45c951f35d0c",
+	-1,
+	'paymentValid',
+	'',
+	'../BankHotelInterface/BankHotelInterface.xtuml');
+INSERT INTO SPR_PEP
+	VALUES ("607ebb84-d0ff-4597-8a0e-3abd4a9cf6b5",
+	"0bb195fe-0402-4f0b-8c12-1b1b938cfc66",
+	"87df19e4-940e-4621-a671-4f0a16e116bf");
+INSERT INTO SPR_PS
+	VALUES ("607ebb84-d0ff-4597-8a0e-3abd4a9cf6b5",
+	'answer',
+	'',
+	'',
+	3);
+INSERT INTO C_EP_PROXY
+	VALUES ("0bb195fe-0402-4f0b-8c12-1b1b938cfc66",
+	"1c73d232-8f4f-4733-8fd8-45c951f35d0c",
+	-1,
+	'answer',
+	'',
+	'../BankHotelInterface/BankHotelInterface.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("1c73d232-8f4f-4733-8fd8-45c951f35d0c",
+	"00000000-0000-0000-0000-000000000000",
+	'BankHotelInterface',
+	'',
+	'../BankHotelInterface/BankHotelInterface.xtuml');
 INSERT INTO PE_PE
 	VALUES ("bd4c9c3e-5437-4bc4-b6b1-696da2dad7b0",
 	1,
