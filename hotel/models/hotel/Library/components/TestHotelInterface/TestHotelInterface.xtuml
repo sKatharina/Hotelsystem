@@ -174,6 +174,24 @@ INSERT INTO C_AS
 	'',
 	1,
 	"29c7b2c4-03f4-42f4-8bd6-17be4c7bbdfc");
+INSERT INTO C_PP
+	VALUES ("ade773e7-a299-48c2-9161-d6a0448ffee7",
+	"d6038333-9b51-460c-b627-eb52239212f5",
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	'startDate',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("8b27a696-094e-4124-af04-9dafb96f701d",
+	"d6038333-9b51-460c-b627-eb52239212f5",
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	'endDate',
+	'',
+	0,
+	'',
+	"ade773e7-a299-48c2-9161-d6a0448ffee7");
 INSERT INTO C_EP
 	VALUES ("3e5b1dde-7947-4c2e-aec9-c7be38df007d",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
@@ -737,6 +755,39 @@ INSERT INTO C_PP
 	"844455f2-cca5-4520-b7e1-183cab78c53e",
 	"ba5eda7a-def5-0000-0000-000000000002",
 	'refNr',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("a88d4181-2ab2-455d-b273-a06187389e3a",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'unlocked',
+	'');
+INSERT INTO C_AS
+	VALUES ("a88d4181-2ab2-455d-b273-a06187389e3a",
+	'unlocked',
+	'',
+	0,
+	"844455f2-cca5-4520-b7e1-183cab78c53e");
+INSERT INTO C_EP
+	VALUES ("da5a3c3f-101b-4000-9f00-4cb2c89122a0",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'chosenRoom',
+	'');
+INSERT INTO C_AS
+	VALUES ("da5a3c3f-101b-4000-9f00-4cb2c89122a0",
+	'chosenRoom',
+	'',
+	1,
+	"a88d4181-2ab2-455d-b273-a06187389e3a");
+INSERT INTO C_PP
+	VALUES ("2ede1306-6be6-4e4e-9ccc-db930e9847dc",
+	"da5a3c3f-101b-4000-9f00-4cb2c89122a0",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'roomNr',
 	'',
 	0,
 	'',

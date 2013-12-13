@@ -486,6 +486,9 @@ select any Room from instances of ROOM where selected.roomNumber == param.roomNr
 
 relate Reservation to Room across R4;
 
+// enable Room again
+assign Room.enabled = true;
+
 send Port1::bookingCreated(bookingRef:Booking.refNr);',
 	'');
 INSERT INTO SM_MOAH
