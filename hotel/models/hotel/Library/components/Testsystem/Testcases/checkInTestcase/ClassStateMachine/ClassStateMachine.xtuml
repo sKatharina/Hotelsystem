@@ -693,12 +693,12 @@ INSERT INTO SM_ACT
 	VALUES ("85a2d4b9-c233-4994-a2ca-dc0007e7ddf3",
 	"3ed65529-78cc-4be3-b123-5cb907431571",
 	1,
-	'send Port1::addGuests(name:"Guest", pid:"123", refNr: param.refNr);
-send Port1::addGuests(name:"Guest", pid:"124", refNr: param.refNr);
-send Port1::addGuests(name:"Guest", pid:"125", refNr: param.refNr);
-send Port1::addGuests(name:"Guest", pid:"126", refNr: param.refNr);
+	'send Port1::addGuests(name:"Guest", pid:"123", refNr: 1);
+send Port1::addGuests(name:"Guest", pid:"124", refNr: 1);
+send Port1::addGuests(name:"Guest", pid:"125", refNr: 1);
+send Port1::addGuests(name:"Guest", pid:"126", refNr: 1);
 LOG::LogInfo(message: "Customer does not want to pay yet.");
-generate CHECKINTC_A4:checkIn(refNr: param.refNr) to CHECKINTC class;',
+generate CHECKINTC_A4:checkIn(refNr: 1) to CHECKINTC class;',
 	'');
 INSERT INTO SM_TAH
 	VALUES ("7e06d783-0cdc-4e0c-bb43-3276a666132c",

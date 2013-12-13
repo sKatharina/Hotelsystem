@@ -416,11 +416,16 @@ INSERT INTO SM_ACT
 	VALUES ("1058088f-2f4c-4dda-a648-9832b0dbb425",
 	"b034e153-bcc3-411f-959d-d9f5b3ef7a94",
 	1,
-	'create object instance Customer1 of CUSTOMER;
-assign Customer1.name = param.name;
-assign Customer1.pid = param.pid;
+	'if param.age>=18
+	create object instance Customer1 of CUSTOMER;
+	assign Customer1.name = param.name;
+	assign Customer1.pid = param.pid;
+	assign Customer1.age = param.age;
 
-send Port1::customerCreated(name:Customer1.name, pid:Customer1.pid);',
+	send Port1::customerCreated(name:Customer1.name, pid:Customer1.pid);
+else
+	send Port1::errorSignal(errorMessage:"Customer too young");
+end if;',
 	'');
 INSERT INTO SM_MOAH
 	VALUES ("cbe507d8-6444-4678-b7db-decddbc7f117",

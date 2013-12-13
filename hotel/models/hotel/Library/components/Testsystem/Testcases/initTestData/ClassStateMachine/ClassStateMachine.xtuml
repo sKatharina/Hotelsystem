@@ -75,7 +75,12 @@ INSERT INTO SM_ACT
 send Port1::createRoom(roomNr:2);
 send Port1::createRoom(roomNr:3);
 send Port1::createRoom(roomNr:4);
-send Port1::createRoom(roomNr:5);',
+send Port1::createRoom(roomNr:5);
+send Port1::createRoom(roomNr:6);
+send Port1::createRoom(roomNr:7);
+send Port1::createRoom(roomNr:8);
+send Port1::createRoom(roomNr:9);
+send Port1::createRoom(roomNr:10);',
 	'');
 INSERT INTO SM_TAH
 	VALUES ("88c1254a-3554-4d41-9274-cff4abc23810",

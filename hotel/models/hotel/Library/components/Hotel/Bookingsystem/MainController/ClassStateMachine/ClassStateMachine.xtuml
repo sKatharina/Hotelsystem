@@ -198,10 +198,13 @@ select many Rooms from instances of ROOM where selected.enabled == true;
 
 // gives back all available rooms
 if empty Rooms
-send Port1::noRooms();
+send Port1::errorSignal(errorMessage:"No Rooms avaiable");
 else
 	for each ROOM in Rooms
 		free = true;
+		q1 = false;
+		q2 = false;
+		q3 = false;
 		select many Reservations related by ROOM->RESERVATION[R4];
 		if (not empty Reservations)
 			for each Reservation in Reservations
@@ -218,12 +221,33 @@ else
 				sendMonth = TIM::get_month(date:param.endDate);
 				sendYear = TIM::get_year(date:param.endDate);
 				// check whether the s parameter lie between the r parameter
-				
-			end for;
-		end if;
-		if free == true
-			send Port1::availableRoom(roomNr:ROOM.roomNumber);
-		end if;
+				if (sendYear <= rstartYear)
+                	if (sendMonth <= rstartMonth)
+                    	if (sendDay <= rstartDay)
+                                                q1 = true;
+                        end if;
+                    end if;
+                end if;
+                if (rendYear <= sstartYear)
+                	if (rendMonth <= sstartMonth)
+                    	if (rendDay <= sstartDay)
+                                                q2 =true;
+                        end if;
+                    end if;
+                else
+                                        q3 = true;
+                end if;
+                if (not ((q1 or q2) and not q3))
+                	free = false;
+                end if;
+                q1 = false;
+				q2 = false;
+				q3 = false;
+            end for;
+        end if;    
+        if (free == true)     
+        	send Port1::availableRoom(roomNr:ROOM.roomNumber);
+        end if;
 	end for;
 	send Port1::allRoomsSent();
 end if;',

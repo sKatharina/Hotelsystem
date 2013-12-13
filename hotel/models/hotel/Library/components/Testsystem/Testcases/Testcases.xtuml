@@ -134,7 +134,7 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'initMakeBookingTC',
 	'',
-	'generate MAKEBOOKINGTC_A23:init() to MAKEBOOKINGTC class;',
+	'generate MAKEBOOKINGTC_A23:initNormalTC() to MAKEBOOKINGTC class;',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'');
@@ -185,10 +185,40 @@ INSERT INTO S_SYNC
 	'',
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
-	3,
+	1,
 	'');
 INSERT INTO PE_PE
 	VALUES ("d089d7d4-5e66-4e21-91b6-76b24b5ebbe7",
+	1,
+	"2e607b61-98cf-4ab1-9fbe-0cdf365692c1",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("a510405c-ccef-4f9f-bd39-493b168aedc2",
+	"00000000-0000-0000-0000-000000000000",
+	'initTooManyRoomsTC',
+	'',
+	'generate MAKEBOOKINGTC_A27:initTooManyRoomsTC() to MAKEBOOKINGTC class;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'');
+INSERT INTO PE_PE
+	VALUES ("a510405c-ccef-4f9f-bd39-493b168aedc2",
+	1,
+	"2e607b61-98cf-4ab1-9fbe-0cdf365692c1",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO S_SYNC
+	VALUES ("ece5cb9f-055a-4c9c-beef-bae0e81958dd",
+	"00000000-0000-0000-0000-000000000000",
+	'initCustomerTooYoung',
+	'',
+	'generate MAKEBOOKINGTC_A26:initCustomerTooYoungTC() to MAKEBOOKINGTC class;',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'');
+INSERT INTO PE_PE
+	VALUES ("ece5cb9f-055a-4c9c-beef-bae0e81958dd",
 	1,
 	"2e607b61-98cf-4ab1-9fbe-0cdf365692c1",
 	"00000000-0000-0000-0000-000000000000",

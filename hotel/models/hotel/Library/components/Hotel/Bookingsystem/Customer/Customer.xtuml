@@ -63,7 +63,7 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'',
+	'self.points=self.points+param.amount;',
 	1,
 	'',
 	"58f4910b-7e36-42af-a369-26e7e6fe7a19");
@@ -83,7 +83,7 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'',
+	'self.points = self.points - param.amount;',
 	1,
 	'',
 	"baf7bc3f-1830-489c-a6c2-0148350e050f");
@@ -96,6 +96,99 @@ INSERT INTO O_TPARM
 	'',
 	"00000000-0000-0000-0000-000000000000",
 	'');
+INSERT INTO O_TFR
+	VALUES ("3223ebff-9c7e-43c5-a920-8440d3712dc8",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'setAge',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.age = param.age;',
+	1,
+	'',
+	"3e9ba92c-dd53-4bd4-962f-0f94036d5e76");
+INSERT INTO O_TPARM
+	VALUES ("7f0f569d-169d-4cd2-a78b-e38541142bc1",
+	"3223ebff-9c7e-43c5-a920-8440d3712dc8",
+	'age',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("9fa86930-3fc4-439f-a604-74899ce46f1f",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'setPid',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"3223ebff-9c7e-43c5-a920-8440d3712dc8");
+INSERT INTO O_TPARM
+	VALUES ("a73ae4d8-7d72-4230-9e14-9a41f801db9b",
+	"9fa86930-3fc4-439f-a604-74899ce46f1f",
+	'pid',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("8fffee59-3891-4b2b-9f08-7695533da894",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'getPid',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	1,
+	'return self.pid;',
+	1,
+	'',
+	"9fa86930-3fc4-439f-a604-74899ce46f1f");
+INSERT INTO O_TFR
+	VALUES ("eb397dab-c4d0-4134-88c5-0176aa308bf1",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'getAge',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	1,
+	'return self.age;',
+	1,
+	'',
+	"8fffee59-3891-4b2b-9f08-7695533da894");
+INSERT INTO O_TFR
+	VALUES ("90ee4693-6c29-4528-bfdc-af57b9e56f8f",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'setName',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	1,
+	'',
+	"eb397dab-c4d0-4134-88c5-0176aa308bf1");
+INSERT INTO O_TPARM
+	VALUES ("74fb2403-22cb-4fdc-ad41-a7a375d10bea",
+	"90ee4693-6c29-4528-bfdc-af57b9e56f8f",
+	'name',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("d3c9ee12-61e5-4aa7-a11b-a8a43310df27",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	'getName',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	1,
+	'return self.name;',
+	1,
+	'',
+	"90ee4693-6c29-4528-bfdc-af57b9e56f8f");
 INSERT INTO O_NBATTR
 	VALUES ("00c8b8e5-5f17-40e5-9111-73a9f410658a",
 	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
@@ -146,6 +239,24 @@ INSERT INTO O_ATTR
 	'',
 	'',
 	'points',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("1dbcbd33-f3b1-488e-a81b-b9257b699ab4",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_BATTR
+	VALUES ("1dbcbd33-f3b1-488e-a81b-b9257b699ab4",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5");
+INSERT INTO O_ATTR
+	VALUES ("1dbcbd33-f3b1-488e-a81b-b9257b699ab4",
+	"30fb31ec-f05a-443a-95ba-1f187ed5feb5",
+	"4998460a-4029-42df-9835-c527ec4133e3",
+	'age',
+	'',
+	'',
+	'age',
 	0,
 	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
