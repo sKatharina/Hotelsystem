@@ -436,7 +436,7 @@ INSERT INTO SM_ACT
 	'select any Customer from instances of CUSTOMER where selected.pid == param.pid;
 
 if empty Customer
-	send Port1::noCustomerFound();
+	send Port1::noCustomerFound(pid:param.pid);
 else
 	send Port1::customerFound(pid:Customer.pid);
 end if;',

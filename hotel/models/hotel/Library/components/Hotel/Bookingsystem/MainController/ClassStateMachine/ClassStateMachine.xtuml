@@ -49,7 +49,7 @@ INSERT INTO SPR_RS_PROXY
 	'chosenRoom',
 	'',
 	'',
-	3,
+	1,
 	'../../../Hotel.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("1ca47911-18eb-4d1c-b23b-1da3f28e7300",
@@ -95,7 +95,7 @@ INSERT INTO SM_STATE
 	'sendingAvailableRooms',
 	2,
 	0);
-INSERT INTO SM_CH
+INSERT INTO SM_EIGN
 	VALUES ("0b9f6e1e-4ea2-4a81-8f71-efdffc431a6a",
 	"8f53552e-c4e9-407a-8134-995a8ef248fe",
 	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
@@ -177,7 +177,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("f97cbe66-7ce3-41eb-a356-aa88d65bd4d9",
 	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_MOAH
@@ -225,9 +225,8 @@ else
 			send Port1::availableRoom(roomNr:ROOM.roomNumber);
 		end if;
 	end for;
-end if;
-
-send Port1::allRoomsSent();',
+	send Port1::allRoomsSent();
+end if;',
 	'');
 INSERT INTO SM_TAH
 	VALUES ("d6c296d9-5743-4e3f-9a19-e0ea0e5ff239",
@@ -239,7 +238,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("d6c296d9-5743-4e3f-9a19-e0ea0e5ff239",
 	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_MOAH
@@ -257,7 +256,9 @@ INSERT INTO SM_ACT
 
 select any Room from instances of ROOM where selected.roomNumber == param.roomNr;
 
-assign Room.enabled = false;',
+assign Room.enabled = false;
+
+send Port1::choosingRoomDone();',
 	'');
 INSERT INTO SM_TAH
 	VALUES ("7ffa7692-aa6a-4151-9e8a-338e93d98756",
@@ -269,7 +270,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("7ffa7692-aa6a-4151-9e8a-338e93d98756",
 	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_TAH
@@ -282,7 +283,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("f37d3ce9-bae8-43e0-92ae-ad9caf557cb7",
 	"7284ec50-ca8d-4bd8-adf1-78b96257d9aa",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO GD_MD
@@ -422,8 +423,8 @@ INSERT INTO DIM_ND
 	0.000000,
 	"aed6255f-1716-4b7c-8d7f-21eaf8faadb0");
 INSERT INTO DIM_GE
-	VALUES (4260.000000,
-	3042.000000,
+	VALUES (4183.000000,
+	3041.000000,
 	"aed6255f-1716-4b7c-8d7f-21eaf8faadb0",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE

@@ -345,6 +345,15 @@ INSERT INTO C_AS
 	'',
 	0,
 	"32005baa-1604-4a7a-a30e-7bcf61a51a74");
+INSERT INTO C_PP
+	VALUES ("415ab4f9-aa31-41e4-982b-86d667273162",
+	"c1b72650-2f6c-4609-adb3-96c83c3648ce",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'pid',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO C_EP
 	VALUES ("a0acdd92-0570-46d2-afb4-0e1bc8990634",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
@@ -792,6 +801,18 @@ INSERT INTO C_PP
 	0,
 	'',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("d2260c73-e477-46ca-a1fd-9d85e5cdc291",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'choosingRoomDone',
+	'');
+INSERT INTO C_AS
+	VALUES ("d2260c73-e477-46ca-a1fd-9d85e5cdc291",
+	'choosingRoomDone',
+	'',
+	0,
+	"da5a3c3f-101b-4000-9f00-4cb2c89122a0");
 INSERT INTO PE_PE
 	VALUES ("b419a028-8278-4e83-a6b0-ed5b7c89ffff",
 	1,

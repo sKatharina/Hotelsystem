@@ -137,8 +137,8 @@ INSERT INTO DIM_ND
 	0.000000,
 	"ff66b208-aad4-4708-a300-40a5c80c100e");
 INSERT INTO DIM_GE
-	VALUES (0.000000,
-	0.000000,
+	VALUES (5793.000000,
+	3446.000000,
 	"ff66b208-aad4-4708-a300-40a5c80c100e",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
@@ -237,8 +237,8 @@ INSERT INTO DIM_ND
 	0.000000,
 	"63e8bab8-236b-4bc2-a061-501722993697");
 INSERT INTO DIM_GE
-	VALUES (0.000000,
-	0.000000,
+	VALUES (4578.000000,
+	3929.000000,
 	"63e8bab8-236b-4bc2-a061-501722993697",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
@@ -415,7 +415,8 @@ INSERT INTO SPR_RS
 	'createRoom',
 	'',
 	'create object instance Room of ROOM;
-assign Room.roomNumber = param.roomNr;',
+assign Room.roomNumber = param.roomNr;
+assign Room.enabled = true;',
 	1);
 INSERT INTO C_EP_PROXY
 	VALUES ("29c7b2c4-03f4-42f4-8bd6-17be4c7bbdfc",
@@ -946,7 +947,7 @@ INSERT INTO SPR_RS
 	'unlocked',
 	'',
 	'',
-	3);
+	1);
 INSERT INTO C_EP_PROXY
 	VALUES ("a88d4181-2ab2-455d-b273-a06187389e3a",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
@@ -963,12 +964,29 @@ INSERT INTO SPR_RS
 	'chosenRoom',
 	'',
 	'',
-	3);
+	1);
 INSERT INTO C_EP_PROXY
 	VALUES ("da5a3c3f-101b-4000-9f00-4cb2c89122a0",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
 	-1,
 	'chosenRoom',
+	'',
+	'../TestHotelInterface/TestHotelInterface.xtuml');
+INSERT INTO SPR_REP
+	VALUES ("2f2ee8d2-a9aa-4a7c-9e1d-66ec5a9740df",
+	"d2260c73-e477-46ca-a1fd-9d85e5cdc291",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96");
+INSERT INTO SPR_RS
+	VALUES ("2f2ee8d2-a9aa-4a7c-9e1d-66ec5a9740df",
+	'choosingRoomDone',
+	'',
+	'',
+	1);
+INSERT INTO C_EP_PROXY
+	VALUES ("d2260c73-e477-46ca-a1fd-9d85e5cdc291",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'choosingRoomDone',
 	'',
 	'../TestHotelInterface/TestHotelInterface.xtuml');
 INSERT INTO C_I_PROXY

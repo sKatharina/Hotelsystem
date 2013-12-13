@@ -416,7 +416,9 @@ INSERT INTO SM_ACT
 	VALUES ("640d2726-4296-423c-876a-e8f4571fdf76",
 	"894afab6-eee8-46a6-89ea-9501eaeaef6b",
 	1,
-	'select many Bookings from instances of BOOKING;
+	'select any Customer from instances of CUSTOMER where selected.pid == param.pid;
+
+select many Bookings related by Customer->BOOKING[R2];
 
 if empty Bookings
 	send Port1::noBookingsFound();
@@ -424,6 +426,7 @@ else
 	for each BOOKING in Bookings
 		send Port1::foundBooking(refNr:BOOKING.refNr);
 	end for;
+	send Port1::allBookingsSent();
 end if;',
 	'');
 INSERT INTO SM_MOAH
@@ -438,7 +441,8 @@ INSERT INTO SM_ACT
 	"894afab6-eee8-46a6-89ea-9501eaeaef6b",
 	1,
 	'create object instance bc of BOOKINGSCONTROLLER;
-bc.addGuest(refNr:param.refNr, guestName:param.name, guestPid:param.pid);',
+bc.addGuest(refNr:param.refNr, guestName:param.name, guestPid:param.pid);
+',
 	'');
 INSERT INTO SM_MOAH
 	VALUES ("ff28117d-a760-4d44-aed8-ada0d5994a0e",
@@ -455,8 +459,8 @@ INSERT INTO SM_ACT
 highestRefNr = 0;
 select any Bookings from instances of BOOKING where selected.refNr > highestRefNr;
 while (not empty Bookings)
-	select any Bookings from instances of BOOKING where selected.refNr > highestRefNr;
 	highestRefNr = Bookings.refNr;
+	select any Bookings from instances of BOOKING where selected.refNr > highestRefNr;
 end while;
 
 // creates a new booking
