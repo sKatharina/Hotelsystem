@@ -3198,7 +3198,7 @@ INSERT INTO SM_ACT
 
 expire = TIM::create_date(day:1, month:1, year:2020, second:8, minute:12, hour:4);
 
-send Port1::addCreditCard(ownerPid:"1234", cardNumber:55555, cvc:222, expireDate:expire);
+send Port1::addCreditCard(ownerPid:"8812011234", cardNumber:55555, cvc:222, expireDate:expire);
 ',
 	'');
 INSERT INTO SM_MOAH
@@ -3314,7 +3314,7 @@ INSERT INTO SM_ACT
 	starts the search for a certain customer
 */
 
-send Port1::findCustomer(pid:"1234");',
+send Port1::findCustomer(pid:"8812011234");',
 	'');
 INSERT INTO SM_TAH
 	VALUES ("546b63d3-9abb-49cb-8600-ec089dd44a0f",
@@ -3355,7 +3355,7 @@ INSERT INTO SM_ACT
 	1,
 	'start= TIM::create_date(day:1, month:1, year:2014, second:8, minute:12, hour:4);
 ende = TIM::create_date(day:12, month:1, year:2014, second:8, minute:12, hour:4);
-
+LOG::LogInfo(message: "Hej, we got to here in requestBooking");
 send Port1::createBooking(customerPid: param.pid, startDate:start, endDate:ende, roomNr:1);',
 	'');
 INSERT INTO SM_TAH

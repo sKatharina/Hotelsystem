@@ -178,7 +178,7 @@ INSERT INTO SPR_PS_PROXY
 	'allCheckedInBookingsSent',
 	'',
 	'',
-	3,
+	1,
 	'../../../Testsystem.xtuml');
 INSERT INTO SM_SEVT
 	VALUES ("da339898-a8ce-441e-943c-fc5fa9b200e5",
@@ -911,7 +911,8 @@ INSERT INTO SM_ACT
 	VALUES ("853e86a9-83f6-45d6-978b-6034b615e6f8",
 	"bebe6210-c022-4b90-9954-162275f5a416",
 	1,
-	'send Port1::checkOut(refNr: param.refNr);',
+	'send Port1::checkedOutBooking(refNr: param.refNr);
+LOG::LogInfo(message: "Checked out Customer.");',
 	'');
 INSERT INTO SM_TAH
 	VALUES ("5bba9186-8850-4e23-a554-0533a3d71c3c",
@@ -1028,7 +1029,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("f407f645-4b64-4cbd-8711-ee96124b2278",
 	"bebe6210-c022-4b90-9954-162275f5a416",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO SM_TAH
@@ -1041,7 +1042,7 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("156871bc-39bf-4995-97c8-9a6353cc0fdc",
 	"bebe6210-c022-4b90-9954-162275f5a416",
-	3,
+	1,
 	'',
 	'');
 INSERT INTO GD_MD
