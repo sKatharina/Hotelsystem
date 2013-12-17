@@ -1372,13 +1372,9 @@ relate Booking to Customer across R2;
 
 // creates a new reservation and relates it to the rooms that should be booked and the booking
 create object instance Reservation of RESERVATION;
-//assign Reservation.refNumber = highestRefNr + 1;
 Reservation.setRefNumber(refNumber:highestRefNr + 1);
-//assign Reservation.startDate = param.startDate;
 Reservation.setStartDate(startDate:param.startDate);
-//assign Reservation.endDate = param.endDate;
 Reservation.setEndDate(endDate:param.endDate);
-//assign Reservation.describtion = "Booked for customer";
 Reservation.setDescription(description: "Booked for Customer");
 
 relate Booking to Reservation across R5;
@@ -1417,7 +1413,7 @@ select one CreditCard related by Customer->CREDITCARD[R1];
 Port2::paymentValid(cardNr:CreditCard.cardNumber, name:Customer.name, cvc:CreditCard.cvc, expirationDate:CreditCard.expirationDate);
 
 //sets isPaid to true
-Booking.isPaid(paid:true);
+Booking.setIsPaid(isPaid:true);
 
 // adds 500 points to the Customer
 Customer.addPoints(amount:500);
@@ -1545,8 +1541,8 @@ if empty Bookings
 	send Port1::noCheckedInBookingsFound();
 else
 	for each BOOKING in Bookings
-		if BOOKING.refNr == param.refNr
-			if BOOKING.isPaid==true
+		if BOOKING.getRefNr() == param.refNr
+			if BOOKING.getIsPaid() == true
 				send Port1::checkOutBillPaid(refNr: param.refNr);
 			else
 				send Port1::checkOutBillNotPaid(amountNotPaid: BOOKING.paidAmount, refNr: param.refNr);
@@ -1596,7 +1592,7 @@ INSERT INTO SM_ACT
 	1,
 	'select any Booking from instances of BOOKING where selected.refNr == param.refNr;
 
-assign Booking.checkedIn = true;
+Booking.setCheckedIn(value:true);
 
 generate BOOKINGSCONTROLLER_A5:init() to BOOKINGSCONTROLLER class; ',
 	'');
@@ -1639,7 +1635,7 @@ INSERT INTO SM_ACT
 	1,
 	'select any Booking from instances of BOOKING where selected.refNr == param.refNr;
 
-assign Booking.checkedOut = true;
+Booking.setCheckedOut(value:true);
 
 generate BOOKINGSCONTROLLER_A5:init() to BOOKINGSCONTROLLER class; ',
 	'');

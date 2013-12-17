@@ -152,7 +152,7 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'self.checkedOut = param.value;',
+	'self.checkedIn = param.value;',
 	1,
 	'',
 	"07d150aa-03db-4362-b0dc-edf69fbdac6b");
@@ -172,7 +172,7 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'self.checkedIn = param.value;',
+	'self.checkedOut = param.value;',
 	1,
 	'',
 	"84f67836-b4c1-4337-8fe7-a046d40a539a");
