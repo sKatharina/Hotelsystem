@@ -7,6 +7,130 @@ INSERT INTO O_OBJ
 	'RESERVATION',
 	'',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("2a747293-e455-4c51-8e4f-16587c433206",
+	"2f96f845-0cbf-4e3c-8560-58d1a2f3e6cc",
+	'setStartDate',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.startDate = param.startDate;',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TPARM
+	VALUES ("0db74f0e-5983-41a1-9f91-5971eff1c111",
+	"2a747293-e455-4c51-8e4f-16587c433206",
+	'startDate',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("af27335a-d26e-4eb2-a19d-1e57769c8e1e",
+	"2f96f845-0cbf-4e3c-8560-58d1a2f3e6cc",
+	'getStartDate',
+	'',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	1,
+	'return self.startDate;',
+	1,
+	'',
+	"2a747293-e455-4c51-8e4f-16587c433206");
+INSERT INTO O_TFR
+	VALUES ("9099e5da-5b74-4a6b-82ea-da7bfb486e94",
+	"2f96f845-0cbf-4e3c-8560-58d1a2f3e6cc",
+	'setEndDate',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.endDate = param.endDate;',
+	1,
+	'',
+	"af27335a-d26e-4eb2-a19d-1e57769c8e1e");
+INSERT INTO O_TPARM
+	VALUES ("28f6f124-1b48-46ab-9b64-7a23a43e5f30",
+	"9099e5da-5b74-4a6b-82ea-da7bfb486e94",
+	'endDate',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("0189a4fe-02a0-46e2-b600-634a19e5cfa3",
+	"2f96f845-0cbf-4e3c-8560-58d1a2f3e6cc",
+	'getEndDate',
+	'',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	1,
+	'return self.endDate;',
+	1,
+	'',
+	"9099e5da-5b74-4a6b-82ea-da7bfb486e94");
+INSERT INTO O_TFR
+	VALUES ("baa71af4-c155-4d0c-ab5d-4eda626c256d",
+	"2f96f845-0cbf-4e3c-8560-58d1a2f3e6cc",
+	'getRefNumber',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	1,
+	'return self.refNumber;',
+	1,
+	'',
+	"0189a4fe-02a0-46e2-b600-634a19e5cfa3");
+INSERT INTO O_TFR
+	VALUES ("d9db4772-1bf2-468e-86c2-e0915ca711ac",
+	"2f96f845-0cbf-4e3c-8560-58d1a2f3e6cc",
+	'setRefNumber',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.refNumber = param.refNumber;',
+	1,
+	'',
+	"baa71af4-c155-4d0c-ab5d-4eda626c256d");
+INSERT INTO O_TPARM
+	VALUES ("2e65ca00-d248-465c-b9bc-3617a2da2013",
+	"d9db4772-1bf2-468e-86c2-e0915ca711ac",
+	'refNumber',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("99360898-2d4f-4233-8c0a-2c0759d74158",
+	"2f96f845-0cbf-4e3c-8560-58d1a2f3e6cc",
+	'setDescription',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.describtion = param.description;',
+	1,
+	'',
+	"d9db4772-1bf2-468e-86c2-e0915ca711ac");
+INSERT INTO O_TPARM
+	VALUES ("d7183b94-1e7c-41f4-865f-6c63808a3714",
+	"99360898-2d4f-4233-8c0a-2c0759d74158",
+	'description',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("dd573ff3-1913-4291-b3a1-7ac2cc9c05b3",
+	"2f96f845-0cbf-4e3c-8560-58d1a2f3e6cc",
+	'getDescription',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	1,
+	'return self.describtion;',
+	1,
+	'',
+	"99360898-2d4f-4233-8c0a-2c0759d74158");
 INSERT INTO O_NBATTR
 	VALUES ("7eef5b6d-0234-4407-8f19-179f6dc51e86",
 	"2f96f845-0cbf-4e3c-8560-58d1a2f3e6cc");

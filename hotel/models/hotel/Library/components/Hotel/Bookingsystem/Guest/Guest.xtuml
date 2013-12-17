@@ -7,6 +7,68 @@ INSERT INTO O_OBJ
 	'GUEST',
 	'',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("d251e30d-3d31-40e5-8bee-11b00784185e",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc",
+	'getName',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	1,
+	'return self.name;',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("c1b32bf8-51e6-48c4-93a2-11bf6473a4b0",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc",
+	'setName',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.name = param.name;',
+	1,
+	'',
+	"d251e30d-3d31-40e5-8bee-11b00784185e");
+INSERT INTO O_TPARM
+	VALUES ("367d6c5b-ee89-4d1a-a82d-1e55f735e5ca",
+	"c1b32bf8-51e6-48c4-93a2-11bf6473a4b0",
+	'name',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("6f7fa532-dea8-46d3-8f3b-4fb30c4dee7c",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc",
+	'getPid',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	1,
+	'return self.pid;',
+	1,
+	'',
+	"c1b32bf8-51e6-48c4-93a2-11bf6473a4b0");
+INSERT INTO O_TFR
+	VALUES ("dc0acd27-8756-4a03-af14-589991bc1f2a",
+	"75071b7a-c645-4198-8e7b-419c13fe59bc",
+	'setPid',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.pid = param.pid;',
+	1,
+	'',
+	"6f7fa532-dea8-46d3-8f3b-4fb30c4dee7c");
+INSERT INTO O_TPARM
+	VALUES ("4b391180-df8f-4b90-96d8-61f0f9e86e13",
+	"dc0acd27-8756-4a03-af14-589991bc1f2a",
+	'pid',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
 INSERT INTO O_NBATTR
 	VALUES ("4ccd44da-0651-4815-9b5a-a84843ae1fa2",
 	"75071b7a-c645-4198-8e7b-419c13fe59bc");

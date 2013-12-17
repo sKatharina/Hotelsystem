@@ -7,6 +7,37 @@ INSERT INTO O_OBJ
 	'CreditCardType',
 	'',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("839a0fe8-4f0f-4294-a202-0f7795dc4903",
+	"6aed6207-8540-4d34-9db9-4ef86526897e",
+	'getName',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	1,
+	'return self.name;',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("ff5f0e3a-4e9d-4a9c-a8a2-1cd964769358",
+	"6aed6207-8540-4d34-9db9-4ef86526897e",
+	'setName',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.name = param.name;',
+	1,
+	'',
+	"839a0fe8-4f0f-4294-a202-0f7795dc4903");
+INSERT INTO O_TPARM
+	VALUES ("b234a5aa-defc-4d83-8c6b-3f06f313a7ac",
+	"ff5f0e3a-4e9d-4a9c-a8a2-1cd964769358",
+	'name',
+	"ba5eda7a-def5-0000-0000-000000000004",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
 INSERT INTO O_NBATTR
 	VALUES ("da1669b0-761d-4fd2-97c5-b51aacc3dae2",
 	"6aed6207-8540-4d34-9db9-4ef86526897e");

@@ -56,19 +56,28 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'',
-	3,
+	'self.cvc = param.cvc;',
+	1,
 	'',
 	"8b24b3c4-2c14-4ba1-ad95-601d9c1c9347");
+INSERT INTO O_TPARM
+	VALUES ("723c9787-ed3b-4ef8-a699-d590c3afa71a",
+	"0a9ffa7f-a9cc-4438-adf5-7736e4aaf2b9",
+	'cvc',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
 INSERT INTO O_TFR
 	VALUES ("8c329b0c-90cf-439f-a63f-4291456482c5",
 	"be0b081f-2b3e-40ca-9452-7146a2d4ef23",
 	'getExpirationDate',
 	'',
-	"ba5eda7a-def5-0000-0000-000000000000",
+	"ba5eda7a-def5-0000-0000-00000000000e",
 	1,
-	'',
-	3,
+	'return self.expirationDate;',
+	1,
 	'',
 	"0a9ffa7f-a9cc-4438-adf5-7736e4aaf2b9");
 INSERT INTO O_TFR
@@ -78,10 +87,19 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'',
-	3,
+	'self.expirationDate = param.expirationDate;',
+	1,
 	'',
 	"8c329b0c-90cf-439f-a63f-4291456482c5");
+INSERT INTO O_TPARM
+	VALUES ("572e38bc-8d8d-4a26-aa35-8f0878644626",
+	"ba710ac6-ba85-491f-b516-8ce498e67962",
+	'expirationDate',
+	"ba5eda7a-def5-0000-0000-00000000000e",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
 INSERT INTO O_NBATTR
 	VALUES ("6993b43b-3865-4605-b609-d3bfcaaaf1b7",
 	"be0b081f-2b3e-40ca-9452-7146a2d4ef23");
