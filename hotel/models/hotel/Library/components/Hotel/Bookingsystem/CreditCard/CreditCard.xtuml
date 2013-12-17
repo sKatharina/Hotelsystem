@@ -7,6 +7,81 @@ INSERT INTO O_OBJ
 	'CREDITCARD',
 	'',
 	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("a4654607-3fee-4c7d-aaab-e4d5f4735973",
+	"be0b081f-2b3e-40ca-9452-7146a2d4ef23",
+	'getCardNumber',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	1,
+	'return self.cardNumber;',
+	1,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("b895d0d5-55b8-4686-97fb-5103faf6d599",
+	"be0b081f-2b3e-40ca-9452-7146a2d4ef23",
+	'setCardNumber',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.cardNumber = param.cardNumber;',
+	1,
+	'',
+	"a4654607-3fee-4c7d-aaab-e4d5f4735973");
+INSERT INTO O_TPARM
+	VALUES ("f4b46721-da87-429a-bda9-3f2af2ad386e",
+	"b895d0d5-55b8-4686-97fb-5103faf6d599",
+	'cardNumber',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("8b24b3c4-2c14-4ba1-ad95-601d9c1c9347",
+	"be0b081f-2b3e-40ca-9452-7146a2d4ef23",
+	'getCvc',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000002",
+	1,
+	'return self.cvc;',
+	1,
+	'',
+	"b895d0d5-55b8-4686-97fb-5103faf6d599");
+INSERT INTO O_TFR
+	VALUES ("0a9ffa7f-a9cc-4438-adf5-7736e4aaf2b9",
+	"be0b081f-2b3e-40ca-9452-7146a2d4ef23",
+	'setCvc',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	3,
+	'',
+	"8b24b3c4-2c14-4ba1-ad95-601d9c1c9347");
+INSERT INTO O_TFR
+	VALUES ("8c329b0c-90cf-439f-a63f-4291456482c5",
+	"be0b081f-2b3e-40ca-9452-7146a2d4ef23",
+	'getExpirationDate',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	3,
+	'',
+	"0a9ffa7f-a9cc-4438-adf5-7736e4aaf2b9");
+INSERT INTO O_TFR
+	VALUES ("ba710ac6-ba85-491f-b516-8ce498e67962",
+	"be0b081f-2b3e-40ca-9452-7146a2d4ef23",
+	'setExpirationDate',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	3,
+	'',
+	"8c329b0c-90cf-439f-a63f-4291456482c5");
 INSERT INTO O_NBATTR
 	VALUES ("6993b43b-3865-4605-b609-d3bfcaaaf1b7",
 	"be0b081f-2b3e-40ca-9452-7146a2d4ef23");

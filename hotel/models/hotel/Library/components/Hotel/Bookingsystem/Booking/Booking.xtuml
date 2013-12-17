@@ -69,7 +69,7 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'assign self.isPaid = param.paid;',
+	'self.isPaid = param.paid;',
 	1,
 	'',
 	"322f0696-2118-48e6-a22f-66c65eaf4469");
@@ -89,7 +89,8 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'',
+	'self.price = param.price;
+',
 	1,
 	'',
 	"cb881e79-b1c7-4924-9627-02e618b6ec52");
@@ -184,6 +185,90 @@ INSERT INTO O_TPARM
 	'',
 	"00000000-0000-0000-0000-000000000000",
 	'');
+INSERT INTO O_TFR
+	VALUES ("d9bdcfa0-5248-4c4d-9fb7-03aeeb2ff276",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'setIsPaid',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'self.isPaid = param.isPaid;',
+	1,
+	'',
+	"e2bc3429-5641-4d8a-91cf-627ac1878d4f");
+INSERT INTO O_TPARM
+	VALUES ("614bb07e-0190-455a-a947-c9c5c54be518",
+	"d9bdcfa0-5248-4c4d-9fb7-03aeeb2ff276",
+	'isPaid',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("d07c1682-342f-4ef6-bcbe-ce0a9623a40a",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'getIsCanceled',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'return self.isPaid;',
+	1,
+	'',
+	"d9bdcfa0-5248-4c4d-9fb7-03aeeb2ff276");
+INSERT INTO O_TFR
+	VALUES ("53e32fdd-a45c-4abb-a7e3-ada0e5ecc253",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'setIsCanceled',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	3,
+	'',
+	"d07c1682-342f-4ef6-bcbe-ce0a9623a40a");
+INSERT INTO O_TPARM
+	VALUES ("5d0c6ce1-ed32-48cb-b701-520ea30671b7",
+	"53e32fdd-a45c-4abb-a7e3-ada0e5ecc253",
+	'isCanceled',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'');
+INSERT INTO O_TFR
+	VALUES ("9766e4d6-a0c5-49ad-a1f7-1225b4bc12e7",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'getIsPaid',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'return self.isPaid;',
+	1,
+	'',
+	"53e32fdd-a45c-4abb-a7e3-ada0e5ecc253");
+INSERT INTO O_TFR
+	VALUES ("de6a0147-b7ef-48d5-9745-0e12c6bf2abe",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'getCheckedIn',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'return self.checkedIn;',
+	1,
+	'',
+	"9766e4d6-a0c5-49ad-a1f7-1225b4bc12e7");
+INSERT INTO O_TFR
+	VALUES ("b41f1076-0782-4aa0-a7d7-daf268435dec",
+	"174ecac5-4547-4a3e-a35b-6db7d2b66576",
+	'getCheckedOut',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000001",
+	1,
+	'return self.checkedOut;',
+	1,
+	'',
+	"de6a0147-b7ef-48d5-9745-0e12c6bf2abe");
 INSERT INTO O_NBATTR
 	VALUES ("79f54674-ac99-400b-9abd-545972256c77",
 	"174ecac5-4547-4a3e-a35b-6db7d2b66576");
