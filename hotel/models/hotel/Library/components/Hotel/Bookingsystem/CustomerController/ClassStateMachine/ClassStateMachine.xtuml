@@ -418,9 +418,9 @@ INSERT INTO SM_ACT
 	1,
 	'if param.age>=18
 	create object instance Customer1 of CUSTOMER;
-	assign Customer1.name = param.name;
-	assign Customer1.pid = param.pid;
-	assign Customer1.age = param.age;
+	Customer1.setName(name:param.name);
+	Customer1.setPid(pid:param.pid);
+	Customer1.setAge(age:param.age);
 
 	send Port1::customerCreated(name:Customer1.name, pid:Customer1.pid);
 else
