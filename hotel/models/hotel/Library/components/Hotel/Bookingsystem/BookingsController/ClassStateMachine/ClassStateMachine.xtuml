@@ -1352,18 +1352,18 @@ INSERT INTO SM_ACT
 highestRefNr = 0;
 select any Bookings from instances of BOOKING where selected.refNr > highestRefNr;
 while (not empty Bookings)
-	highestRefNr = Bookings.refNr;
+	highestRefNr = Bookings.getRefNr();
 	select any Bookings from instances of BOOKING where selected.refNr > highestRefNr;
 end while;
 
 // creates a new booking
 create object instance Booking of BOOKING;
-assign Booking.refNr = highestRefNr + 1;
-assign Booking.checkedIn = false;
-assign Booking.checkedOut = false;
-assign Booking.isPaid = false;
-assign Booking.isCanceled = false;
-assign Booking.price = 500;
+Booking.setRefNr(nr:highestRefNr + 1);
+Booking.setCheckedIn(value:false);
+Booking.setCheckedOut(value:false);
+Booking.setIsPaid(isPaid:false);
+Booking.setIsCanceled(isCanceled:false);
+Booking.setPrice(price:500);
 
 // relate the booking to customer
 select any Customer from instances of CUSTOMER where selected.pid == param.customerPid;
@@ -1372,10 +1372,14 @@ relate Booking to Customer across R2;
 
 // creates a new reservation and relates it to the rooms that should be booked and the booking
 create object instance Reservation of RESERVATION;
-assign Reservation.refNumber = highestRefNr + 1;
-assign Reservation.startDate = param.startDate;
-assign Reservation.endDate = param.endDate;
-assign Reservation.describtion = "Booked for customer";
+//assign Reservation.refNumber = highestRefNr + 1;
+Reservation.setRefNumber(refNumber:highestRefNr + 1);
+//assign Reservation.startDate = param.startDate;
+Reservation.setStartDate(startDate:param.startDate);
+//assign Reservation.endDate = param.endDate;
+Reservation.setEndDate(endDate:param.endDate);
+//assign Reservation.describtion = "Booked for customer";
+Reservation.setDescription(description: "Booked for Customer");
 
 relate Booking to Reservation across R5;
 
@@ -1384,7 +1388,7 @@ select any Room from instances of ROOM where selected.roomNumber == param.roomNr
 relate Reservation to Room across R4;
 
 // enable Room again
-assign Room.enabled = true;
+Room.setEnabled(enabled:true);
 
 send Port1::bookingCreated(bookingRef:Booking.refNr);
 
