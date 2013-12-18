@@ -99,7 +99,7 @@ INSERT INTO O_TFR
 	'',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'LOG::LogInfo(message:"test");',
+	'',
 	1,
 	'',
 	"62f46f01-ec93-4a14-b198-90650ecb1ef6");
@@ -108,21 +108,12 @@ INSERT INTO O_TFR
 	"dbb442a5-b1dd-46d1-af0d-6302b347ab45",
 	'findBookings',
 	'',
-	"ba5eda7a-def5-0000-0000-000000000002",
+	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
-	'return 666;',
+	'',
 	1,
 	'',
 	"d660106b-92d6-4522-824e-ae014f5d0514");
-INSERT INTO O_TPARM
-	VALUES ("e0418614-cdfd-4758-9a43-99269ddf5194",
-	"faad31c7-ab47-489b-98ea-ea0dcde6ab41",
-	'pid',
-	"ba5eda7a-def5-0000-0000-000000000004",
-	0,
-	'',
-	"00000000-0000-0000-0000-000000000000",
-	'');
 INSERT INTO O_ID
 	VALUES (0,
 	"dbb442a5-b1dd-46d1-af0d-6302b347ab45");

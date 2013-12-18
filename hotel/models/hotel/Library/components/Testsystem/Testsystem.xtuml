@@ -730,23 +730,6 @@ INSERT INTO C_EP_PROXY
 	'',
 	'../TestHotelInterface/TestHotelInterface.xtuml');
 INSERT INTO SPR_PEP
-	VALUES ("ed5edfba-b7eb-42bc-ae51-ffbc7cd9056c",
-	"a84668bc-f3d7-423f-8345-5cdf3be68524",
-	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
-INSERT INTO SPR_PS
-	VALUES ("ed5edfba-b7eb-42bc-ae51-ffbc7cd9056c",
-	'findCheckedInBooking',
-	'',
-	'',
-	1);
-INSERT INTO C_EP_PROXY
-	VALUES ("a84668bc-f3d7-423f-8345-5cdf3be68524",
-	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
-	-1,
-	'findCheckedInBooking',
-	'',
-	'../TestHotelInterface/TestHotelInterface.xtuml');
-INSERT INTO SPR_PEP
 	VALUES ("85d707fd-50dc-4b22-9d92-d924bacd3b42",
 	"c5c40d5b-e7ed-4c19-9905-b8071bbaae7c",
 	"4d7781ec-bbd3-41be-9b5d-8563df2e6403");
@@ -942,7 +925,7 @@ INSERT INTO SPR_PS
 	'errorBookings',
 	'',
 	'',
-	3);
+	1);
 INSERT INTO C_EP_PROXY
 	VALUES ("f03ed2fb-87c6-4c8a-a8b3-5418b05e3a75",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
@@ -959,7 +942,7 @@ INSERT INTO SPR_PS
 	'errorBookings2',
 	'',
 	'',
-	3);
+	1);
 INSERT INTO C_EP_PROXY
 	VALUES ("619042e1-38a8-4691-a1fc-9adeeb8ce18e",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",

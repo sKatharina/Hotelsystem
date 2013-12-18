@@ -246,7 +246,7 @@ else
             end for;
         end if;    
         if (free == true)     
-        	send Port1::availableRoom(roomNr:ROOM.roomNumber);
+        	send Port1::availableRoom(roomNr:ROOM.getRoomNumber());
         end if;
 	end for;
 	send Port1::allRoomsSent();

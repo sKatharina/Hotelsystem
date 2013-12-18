@@ -718,38 +718,17 @@ INSERT INTO C_PP
 	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO C_EP
-	VALUES ("a84668bc-f3d7-423f-8345-5cdf3be68524",
+	VALUES ("c5c40d5b-e7ed-4c19-9905-b8071bbaae7c",
 	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
 	-1,
-	'findCheckedInBooking',
+	'checkIn',
 	'');
 INSERT INTO C_AS
-	VALUES ("a84668bc-f3d7-423f-8345-5cdf3be68524",
-	'findCheckedInBooking',
+	VALUES ("c5c40d5b-e7ed-4c19-9905-b8071bbaae7c",
+	'checkIn',
 	'',
-	1,
+	0,
 	"80490f95-54e7-4336-a28b-5dbf61d05d23");
-INSERT INTO C_PP
-	VALUES ("4d0e77cb-a214-405b-a3fc-fea3f784fbe5",
-	"a84668bc-f3d7-423f-8345-5cdf3be68524",
-	"ba5eda7a-def5-0000-0000-000000000004",
-	'pid',
-	'',
-	0,
-	'',
-	"00000000-0000-0000-0000-000000000000");
-INSERT INTO C_EP
-	VALUES ("c5c40d5b-e7ed-4c19-9905-b8071bbaae7c",
-	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
-	-1,
-	'checkIn',
-	'');
-INSERT INTO C_AS
-	VALUES ("c5c40d5b-e7ed-4c19-9905-b8071bbaae7c",
-	'checkIn',
-	'',
-	0,
-	"a84668bc-f3d7-423f-8345-5cdf3be68524");
 INSERT INTO C_PP
 	VALUES ("c3d191d7-1f57-4078-b157-1d6841a0cb80",
 	"c5c40d5b-e7ed-4c19-9905-b8071bbaae7c",
