@@ -187,7 +187,7 @@ INSERT INTO DIM_ELE
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ED
 	VALUES ("b2b9ca8f-185a-4b8a-9bed-4e32f624a6f4",
-	"fdb943f4-b683-4cfc-804f-081856ec43d1",
+	"00000000-0000-0000-0000-000000000000",
 	"5574f7ea-dceb-4aff-930d-f05b9e754618");
 INSERT INTO GD_GE
 	VALUES ("eeb66ea1-7665-4cef-9ae7-518b5b3c38d8",
@@ -262,9 +262,6 @@ INSERT INTO GD_LS
 	"00000000-0000-0000-0000-000000000000",
 	"34fdaa32-1d91-4919-bc44-e489e3ac9f0f",
 	"6d24a356-9aa7-49d0-93a2-e49db7341d8c");
-INSERT INTO GD_AOS
-	VALUES ("fdb943f4-b683-4cfc-804f-081856ec43d1",
-	"e13d8e5a-8737-4764-9285-df814648543f");
 INSERT INTO DIM_WAY
 	VALUES ("34fdaa32-1d91-4919-bc44-e489e3ac9f0f",
 	4536.000000,
@@ -288,11 +285,6 @@ INSERT INTO DIM_ELE
 	VALUES ("eeb66ea1-7665-4cef-9ae7-518b5b3c38d8",
 	0,
 	"00000000-0000-0000-0000-000000000000");
-INSERT INTO DIM_CON
-	VALUES ("fdb943f4-b683-4cfc-804f-081856ec43d1",
-	4427.000000,
-	3239.000000,
-	"eeb66ea1-7665-4cef-9ae7-518b5b3c38d8");
 INSERT INTO DIM_ED
 	VALUES ("36fc1d54-bfce-4ff3-8eda-f4fb0f7c84af",
 	"00000000-0000-0000-0000-000000000000",
@@ -696,32 +688,6 @@ INSERT INTO C_C_PROXY
 	'',
 	'../components/Bank/Bank.xtuml');
 INSERT INTO C_SF
-	VALUES ("5926afc0-10a4-426f-b327-54fd155fdb4c",
-	"aac35cd5-2f22-4447-8562-dc606f5c1f96",
-	"4d7781ec-bbd3-41be-9b5d-8563df2e6403",
-	'',
-	'Testsystem::Port1::TestHotelInterface -o)- Hotel::Port1::TestHotelInterface');
-INSERT INTO PE_PE
-	VALUES ("5926afc0-10a4-426f-b327-54fd155fdb4c",
-	1,
-	"1cc0c885-7fb6-454b-8204-8340d0f59411",
-	"00000000-0000-0000-0000-000000000000",
-	22);
-INSERT INTO C_R_PROXY
-	VALUES ("aac35cd5-2f22-4447-8562-dc606f5c1f96",
-	'TestHotelInterface',
-	'',
-	'Unnamed Interface',
-	'Hotel::Port1::TestHotelInterface',
-	'../components/Hotel/Hotel.xtuml');
-INSERT INTO C_P_PROXY
-	VALUES ("4d7781ec-bbd3-41be-9b5d-8563df2e6403",
-	'TestHotelInterface',
-	'Unnamed Interface',
-	'',
-	'Testsystem::Port1::TestHotelInterface',
-	'../components/Testsystem/Testsystem.xtuml');
-INSERT INTO C_SF
 	VALUES ("a9898bfa-9bf8-459e-926c-304b77274ce7",
 	"f9b9d7a9-6c66-4659-b276-9fe0b8d7dea4",
 	"87df19e4-940e-4621-a671-4f0a16e116bf",
@@ -747,6 +713,32 @@ INSERT INTO C_P_PROXY
 	'',
 	'Hotel::Port2::BankHotelInterface',
 	'../components/Hotel/Hotel.xtuml');
+INSERT INTO C_SF
+	VALUES ("5926afc0-10a4-426f-b327-54fd155fdb4c",
+	"aac35cd5-2f22-4447-8562-dc606f5c1f96",
+	"4d7781ec-bbd3-41be-9b5d-8563df2e6403",
+	'',
+	'Testsystem::Port1::TestHotelInterface -o)- Hotel::Port1::TestHotelInterface');
+INSERT INTO PE_PE
+	VALUES ("5926afc0-10a4-426f-b327-54fd155fdb4c",
+	1,
+	"1cc0c885-7fb6-454b-8204-8340d0f59411",
+	"00000000-0000-0000-0000-000000000000",
+	22);
+INSERT INTO C_R_PROXY
+	VALUES ("aac35cd5-2f22-4447-8562-dc606f5c1f96",
+	'TestHotelInterface',
+	'',
+	'Unnamed Interface',
+	'Hotel::Port1::TestHotelInterface',
+	'../components/Hotel/Hotel.xtuml');
+INSERT INTO C_P_PROXY
+	VALUES ("4d7781ec-bbd3-41be-9b5d-8563df2e6403",
+	'TestHotelInterface',
+	'Unnamed Interface',
+	'',
+	'Testsystem::Port1::TestHotelInterface',
+	'../components/Testsystem/Testsystem.xtuml');
 INSERT INTO PE_PE
 	VALUES ("1cc0c885-7fb6-454b-8204-8340d0f59411",
 	1,
