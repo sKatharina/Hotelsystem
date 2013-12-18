@@ -473,9 +473,9 @@ INSERT INTO SM_ACT
 	'// creates a new instance of creditcard, assigns all the parameters with values from the signal
 // and signals back, that the credit card is created
 create object instance CreditCard of CREDITCARD;
-assign CreditCard.cardNumber = param.cardNumber;
-assign CreditCard.cvc = param.cvc;
-assign CreditCard.expirationDate = param.expireDate;
+CreditCard.setCardNumber(cardNumber:param.cardNumber);
+CreditCard.setCvc(cvc:param.cvc);
+CreditCard.setExpirationDate(expirationDate:param.expireDate);
 
 // relates the CreditCard to a Customer
 select any Customer from instances of CUSTOMER where selected.pid == param.ownerPid;

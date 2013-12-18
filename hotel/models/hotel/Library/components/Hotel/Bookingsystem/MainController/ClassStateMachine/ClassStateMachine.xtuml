@@ -280,7 +280,7 @@ INSERT INTO SM_ACT
 
 select any Room from instances of ROOM where selected.roomNumber == param.roomNr;
 
-assign Room.enabled = false;
+Room.setEnabled(enabled:false);
 
 send Port1::choosingRoomDone();',
 	'');
