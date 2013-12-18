@@ -921,6 +921,48 @@ INSERT INTO C_AS
 	'',
 	0,
 	"e1e74dbb-a284-4e17-88f3-ee8556f88cb6");
+INSERT INTO C_EP
+	VALUES ("f03ed2fb-87c6-4c8a-a8b3-5418b05e3a75",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'errorBookings',
+	'');
+INSERT INTO C_AS
+	VALUES ("f03ed2fb-87c6-4c8a-a8b3-5418b05e3a75",
+	'errorBookings',
+	'',
+	0,
+	"725e23b6-48a9-4182-b309-3588688a41b1");
+INSERT INTO C_PP
+	VALUES ("9c6ff765-533f-4539-9aaa-2f387925d197",
+	"f03ed2fb-87c6-4c8a-a8b3-5418b05e3a75",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'errorMessage',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_EP
+	VALUES ("619042e1-38a8-4691-a1fc-9adeeb8ce18e",
+	"b419a028-8278-4e83-a6b0-ed5b7c89ffff",
+	-1,
+	'errorBookings2',
+	'');
+INSERT INTO C_AS
+	VALUES ("619042e1-38a8-4691-a1fc-9adeeb8ce18e",
+	'errorBookings2',
+	'',
+	0,
+	"f03ed2fb-87c6-4c8a-a8b3-5418b05e3a75");
+INSERT INTO C_PP
+	VALUES ("8a2282f6-cab6-453c-b4b9-bf881e50a499",
+	"619042e1-38a8-4691-a1fc-9adeeb8ce18e",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'errorMessage',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
 INSERT INTO PE_PE
 	VALUES ("b419a028-8278-4e83-a6b0-ed5b7c89ffff",
 	1,

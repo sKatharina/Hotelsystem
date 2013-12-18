@@ -1301,8 +1301,11 @@ INSERT INTO SM_ACT
 select many Bookings related by Customer->BOOKING[R2];
 
 if empty Bookings
-	LOG::LogInfo(message: "no bookings in sendBookings");
-	send Port1::noBookingsFound();
+	if(param.checkedIn)
+		send Port1::errorBookings2(errorMessage: "No Bookings found");
+	else
+		send Port1::errorBookings(errorMessage: "No Bookings found");
+	end if;
 else
 	if param.checkedIn
 		for each BOOKING in Bookings
